@@ -1,0 +1,178 @@
+
+.requestpage{
+    padding-left:20px ;
+    padding-right: 20px;
+}
+.top-section {
+    display: grid;
+    grid-template-columns: 60% 40%; /* Left column for heading and summary, right for quick action */
+    grid-template-rows: auto auto; /* Two rows: one for heading, one for summary */
+    /*gap: 20px; /* Adjust the gap */
+    
+    padding-top: 10px;
+  }
+  
+  .top-section h1 {
+    grid-column: 1 / 2; /* Spans from the first to the second column line in the first row */
+    grid-row: 1 / 2; /* In the first row */
+    color: #333;
+    margin-top: 0px;
+  }
+  .top-section svg{
+    color: black;
+    font-size: 3em;
+
+  }
+  
+  .request-summary {
+    grid-column: 1 / 2; /* Spans the first column in the second row */
+    grid-row: 2 / 3; /* In the second row */
+    gap: 0px;
+    margin-right: 0;
+    padding-left: 0;
+  }
+
+
+  .request-status {
+    display: flex;
+    gap: 10px; 
+    align-items: center; /* Optional vertical alignment */
+  }
+  
+  .request-status {
+  display: flex; 
+  gap: 30px; 
+  margin-bottom: 20px;
+   
+}
+
+.pending-request,
+.rejected-request,
+.accepted-requests {
+  padding: 15px 20px;
+  border-radius: 5px;
+  color: white; /* White text color for better contrast */
+  display: flex; /* Arrange icon, text, and number within each box */
+  align-items: center; /* Vertically align items */
+  gap: 15px; 
+}
+
+.pending-request {
+  background-color: #f4c988;
+}
+
+.rejected-request {
+  background-color: #f53838;
+}
+
+.accepted-requests {
+  background-color: #04f39c;
+}
+
+
+/* Style the text and number */
+.pending-request span,
+.rejected-request span,
+.accepted-requests span {
+  font-size: 1.2em; /* Adjust text size */
+}
+
+.pending-request .number,
+.rejected-request .number,
+.accepted-requests .number {
+  font-size: 1.8em; /* Larger number size */
+  font-weight: bold;
+  margin-left: auto; /* Push the number to the right */
+}
+
+.quick-action {
+    grid-column: 2 / 3; /* In the second column */
+    grid-row: 1 / 3; /* Spans both rows of the second column */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    background-color: #145da0;
+    padding-left: 10px;
+    max-width: 80%;
+    color:white;
+  }
+
+  .quick-action button {
+    display: flex; /* To align icon and text in the button */
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    border: none;
+    border-radius: 25px; /* Creates the pill shape */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    width: 90%; /* Make buttons take full width of container */
+    box-sizing: border-box; /* Ensure padding doesn't increase button width */
+    background-color: #00cfc8;
+    font-size: 15px;
+    height: 40px;
+  }
+
+  .quick-action h2{
+    margin-bottom: 0;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 30px; 
+    border-bottom: 1px solid #eee;
+  }
+  
+  /* Search Bar Styles */
+  .search-container {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 25px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for rounded corners on button */
+  }
+  
+  .search-input {
+    border:black;
+    border-style: solid;
+    padding: 10px 15px;
+    font-size: 1em;
+    flex-grow: 1; /* Allow input to take up available space */
+    border-radius: 25px 0 0 25px; /* Left rounded corners */
+  }
+  
+  .search-button {
+    background-color: transparent;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+  }
+  
+  .search-button svg { /* Style the search icon */
+    font-size: 1.5em;
+    color: #555;
+  }
+  
+  /* Filter and Export Styles */
+  .filter-export {
+    display: flex;
+    gap: 20px; /* Space between Filter and Export buttons */
+  }
+  
+  .filter-button,
+  .export-button {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+    color: #333;
+  }
+  
+  .filter-button svg,
+  .export-button svg { /* Style the filter and export icons */
+    font-size: 1.2em;
+    color: #555;
+  }
