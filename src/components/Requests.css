@@ -117,11 +117,16 @@
   .quick-action h2{
     margin-bottom: 0;
   }
+
+  .quick-action svg{
+    font-size:2em;
+  }
   
   .actions {
     display: flex;
     gap: 30px; 
     border-bottom: 1px solid #eee;
+    width:95%;
   }
   
   /* Search Bar Styles */
@@ -142,7 +147,6 @@
   }
   
   .search-button {
-    background-color: transparent;
     border: none;
     padding: 8px 15px;
     cursor: pointer;
@@ -157,6 +161,7 @@
   .filter-export {
     display: flex;
     gap: 20px; /* Space between Filter and Export buttons */
+    color: black;
   }
   
   .filter-button,
@@ -167,12 +172,14 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    font-size: 1em;
-    color: #333;
+    font-size: 1.2em;
+    color: black;
   }
   
   .filter-button svg,
-  .export-button svg { /* Style the filter and export icons */
-    font-size: 1.2em;
+  .export-button svg {
+    font-size: 1.5em;
     color: #555;
   }
+
+

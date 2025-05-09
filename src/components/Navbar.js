@@ -2,6 +2,8 @@ import logo from './logo.png';
 import profilePic from './dp.jpg';
 import { LuLayoutDashboard, LuUsers, LuBell, LuCalendar, LuMessageSquare } from "react-icons/lu";
 import { FaBell } from "react-icons/fa";
+import './Navbar.css';
+import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
     return ( 
@@ -10,24 +12,36 @@ const Navbar = () => {
         <img src={logo} alt="logo" className='logo' />
         <div className="nav-links">
           <div className="nav-item">
-            <a href='#page'><LuLayoutDashboard />
-            Dashboard</a>
+            <NavLink to="/dashboard" className="nav-link" activeClassName="active"> 
+              <LuLayoutDashboard />
+              Dashboard
+            </NavLink>
           </div>
           <div className="nav-item">
-            <LuUsers />
-            <a href='#page'>My Students</a>
-          </div>
-          <div className="nav-item active">
-            <LuBell />
-            <span>Requests</span>
-          </div>
-          <div className="nav-item">
-            <LuCalendar />
-            <a href='#page'>Schedule</a>
+            
+          <NavLink to="/students" className="nav-link" activeClassName="active"> 
+              <LuUsers />
+              My Students
+            </NavLink>
           </div>
           <div className="nav-item">
-            <LuMessageSquare />
-            <a href='#page'>Messages</a>
+          <NavLink to="/requests" className="nav-link" activeClassName="active"> 
+              <LuBell />
+              Requests
+            </NavLink>
+          </div>
+          <div className="nav-item">
+            
+            <NavLink to="/schedule" className="nav-link" activeClassName="active"> 
+              <LuCalendar />
+              Schedule
+            </NavLink>
+          </div>
+          <div className="nav-item">
+          <NavLink to="/messages" className="nav-link" activeClassName="active"> 
+              <LuMessageSquare />
+              Messages
+            </NavLink>
           </div>
         </div>
       </div>

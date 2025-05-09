@@ -1,0 +1,159 @@
+.messages-page-container {
+    display: flex; /* Use flexbox for the overall page layout */
+    height: 100vh; /* Or a specific height */
+  }
+  
+  .contact-list-sidebar {
+    width: 300px; /* Adjust width as needed */
+    background-color: #f0f0f0; /* Example background color */
+    border-right: 1px solid #ccc;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .search-contacts {
+    margin-bottom: 15px;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .avatar-placeholder {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ddd; /* Placeholder color */
+    margin-right: 10px;
+  }
+  
+  .avatar-placeholder.large {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .avatar-placeholder.small {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .avatar-placeholder.small.user {
+    background-color: lightblue; /* Example user avatar color */
+  }
+  
+  .contact-info {
+    flex-grow: 1;
+  }
+  
+  .contact-name {
+    font-weight: bold;
+    display: block;
+  }
+  
+  .contact-name.large {
+    font-size: 1.2em;
+  }
+  
+  .subject {
+    display: block;
+    color: #777;
+    font-size: 0.9em;
+  }
+  
+  .message-preview {
+    display: block;
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  .unread-count {
+    background-color: lightcoral;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+    font-size: 0.8em;
+  }
+  
+  .conversation-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .conversation-header {
+    background-color: #e0e0e0;
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .conversation-info {
+    flex-grow: 1;
+  }
+  
+  .message-display {
+    flex-grow: 1;
+    padding: 15px;
+    overflow-y: auto;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .message.sent {
+    justify-content: flex-end;
+  }
+  
+  .message-content {
+    background-color: lightblue; /* Example sent message color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    max-width: 70%;
+  }
+  
+  .message.received .message-content {
+    background-color: #f9f9f9; /* Example received message color */
+    color: #333;
+  }
+  
+  .message-input-area {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .message-input-area textarea {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+  }
+  
+  .message-input-area button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Example send button color */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .attachment-icon {
+    font-size: 1.5em;
+    color: #777;
+    cursor: pointer;
+  }
