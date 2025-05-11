@@ -134,7 +134,7 @@
     display: flex;
     border: 1px solid #ccc;
     border-radius: 25px; /* Rounded corners */
-    overflow: hidden; /* Hide overflow for rounded corners on button */
+    overflow: hidden;/* Hide overflow for rounded corners on button */
   }
   
   .search-input {

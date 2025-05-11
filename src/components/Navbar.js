@@ -6,6 +6,8 @@ import './Navbar.css';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
+
+    
     return ( 
         <nav className="navbar">
       <div className="left-section">
