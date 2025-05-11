@@ -1,0 +1,181 @@
+.app-container {
+    min-height: 100vh;
+    background-color: #f3f4f6;
+  }
+  
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .page-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  
+  .page-subtitle {
+    color: #6b7280;
+    margin-bottom: 1.5rem;
+  }
+  
+  .main-grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1rem;
+  }
+  
+  .quiz-cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  
+  .quiz-card-wrapper {
+    height: 100%;
+  }
+  
+  .quiz-card {
+    background-color: #145da0;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .quiz-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+  }
+  
+  .teacher-name {
+    margin-bottom: 0.75rem;
+    color: #6ce5e8;
+  }
+  
+  .info-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .info-row:last-of-type {
+    margin-bottom: 1rem;
+  }
+  
+  .icon {
+    margin-right: 0.5rem;
+  }
+  
+  .button-container {
+    margin-top: auto;
+  }
+  
+  .start-button {
+    background-color: #00cfc8;
+    color: white;
+    padding: 0.5rem 0;
+    border-radius: 0.375rem;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .start-button:hover {
+    background-color: #06b6d4;
+  }
+  
+  .sidebar {
+    background-color: #145da0;
+    color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    
+  }
+  
+  .sidebar-card {
+    background-color: #00cfc8;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .card-title {
+    font-weight: 600;
+    margin-left: 0.5rem;
+  }
+  
+  .grade-value, .pending-value {
+    font-size: 1.875rem;
+    font-weight: 700;
+  }
+  
+  .pending-header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .pending-icon {
+    font-size: 1.5rem; 
+    margin-right: 0.5rem;
+  }
+
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  .activities-section {
+    margin-bottom: 1rem;
+    padding-left: 0.5rem; 
+
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+  }
+  
+  .activity-card {
+    background-color: #00cfc8;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .activity-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .activity-indicator {
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: #10b981;
+    border-radius: 50%;
+    margin-right: 0.5rem;
+  }
+  
+  .activity-title {
+    font-weight: 600;
+  }
+  
+  .activity-subtitle {
+    font-size: 0.875rem;
+    color: #e5e7eb;
+  }
+
+.quiz-cards-container .quiz-card-wrapper:nth-child(4) {
+  margin-top: 30%;
+}

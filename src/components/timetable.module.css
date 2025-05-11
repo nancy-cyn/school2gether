@@ -1,0 +1,345 @@
+/* Time.module.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Top Navigation Bar */
+.topNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #0078A6;
+  background: linear-gradient(90deg,rgba(0, 120, 166, 1) 10%, rgba(93, 224, 230, 1) 100%);  color: white;
+  padding: 0.5rem 1rem;
+  height: 60px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  transition: all 0.2s;
+}
+
+.navLink.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.userProfile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.notification {
+  position: relative;
+}
+
+.notificationBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 8px;
+  height: 8px;
+  background-color: #ff4757;
+  border-radius: 50%;
+}
+
+.profilePic {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.profilePic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.userName {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.userRole {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+/* Main Content Container */
+.contentContainer {
+  display: flex;
+  flex: 1;
+  padding: 1rem;
+  gap: 1rem;
+  background-color: #f5f5f7;
+}
+
+/* Weekly Schedule */
+.weeklySchedule {
+  flex: 1;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  position: relative;
+}
+
+.timeColumn {
+  width: 60px;
+  padding-top: 40px; /* For day headers */
+}
+
+.timeSlot {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.scheduleGrid {
+  flex: 1;
+  position: relative;
+}
+
+.daysRow {
+  display: flex;
+  height: 40px;
+}
+
+.dayHeader {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.classesContainer {
+  display: flex;
+  position: relative;
+}
+
+.dayColumn {
+  flex: 1;
+  position: relative;
+  min-height: 450px; /* 10 hours * 45px */
+  border-right: 1px solid #eaeaea;
+}
+
+.dayColumn:last-child {
+  border-right: none;
+}
+
+.classItem {
+  position: absolute;
+  width: calc(100% - 10px);
+  height: 45px;
+  left: 5px;
+  border-radius: 6px;
+  padding: 0.4rem;
+  overflow: hidden;
+  font-size: 0.8rem;
+}
+
+.classSubject {
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.classTeacher {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+/* Class Subject Colors */
+.math {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.english {
+  background-color: #f3e5f5;
+  color: #7b1fa2;
+}
+
+.chemistry {
+  background-color: #e8f5e9;
+  color: #388e3c;
+}
+
+.physics {
+  background-color: #f3e5f5;
+  color: #8e24aa;
+}
+
+.biology {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.todayClasses, .quickAccess {
+  background-color: #145da0;
+  border-radius: 8px;
+  padding: 1.2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.sectionHeading {
+  color: white;
+  background-color: #145da0;
+  margin: -1.2rem -1.2rem 1rem;
+  padding: 1rem;
+  border-radius: 8px 8px 0 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.todayClassCard {
+  background-color: #00e1cd;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.classHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.classTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.joinBtn {
+  background-color: white;
+  color: #00a2b8;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.classDetails {
+  margin-bottom: 0.8rem;
+}
+
+.classDetails p {
+  margin: 0;
+}
+
+.timeInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.viewRecordingBtn {
+  background-color: white;
+  color: #00a2b8;
+  border: none;
+  border-radius: 4px;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+}
+
+.quickAccessBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #00e1cd;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.quickAccessBtn:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1024px) {
+  .contentContainer {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navLinks span {
+    display: none;
+  }
+  
+  .userInfo {
+    display: none;
+  }
+  
+  .timeColumn {
+    width: 40px;
+  }
+}
