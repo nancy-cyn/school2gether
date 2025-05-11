@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+/* base styles */
+.App {
+  display: grid;
+  grid-template-rows: auto; /* Use auto to adjust row height to content */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible columns */
+  gap: 20px;
+}
+
+/* Main content next to .new */
+.content {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 5;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  border: 4px solid #f6f6f6;            /* Thicker border */
+  padding: 24px;                        /* More spacing */
+  border-radius: 12px;                  /* Slightly rounder corners */
+  background-color: #283071;           /* Deep blue background */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  box-sizing: border-box;
+
+  font-weight: bold;                   /* Thicker text */
+  color: #ffffff;                      /* White text for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.content:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(153, 43, 43, 0.15); /* add a subtle shadow */
+  cursor: pointer;
+}
+.content-header {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* space between image and text */
+}
+.content-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.content-text p {
+  margin: 2px 0;
+}
+.performance {
+  grid-row-start: 3;
+  grid-row-end: 7;
+  grid-column-start: 3;
+  grid-column-end: 7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  border: 4px solid #f6f6f6;            /* Thicker border */
+  padding: 24px;                        /* More spacing */
+  border-radius: 12px;                  /* Slightly rounder corners */
+  background-color: #283071;           /* Deep blue background */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  box-sizing: border-box;
+
+  font-weight: bold;                   /* Thicker text */
+  color: #ffffff;                      /* White text for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.performance:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(153, 43, 43, 0.15); /* add a subtle shadow */
+  cursor: pointer;
+}
+.performance-img {
+  width: 100%; /* Adjust as needed */
+  max-height: 330px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.active {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 5;
+  grid-column-end: 7;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  border: 4px solid #f6f6f6;            /* Thicker border */
+  padding: 24px;                        /* More spacing */
+  border-radius: 12px;                  /* Slightly rounder corners */
+  background-color: #283071;           /* Deep blue background */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  box-sizing: border-box;
+
+  font-weight: bold;                   /* Thicker text */
+  color: #ffffff;                      /* White text for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.active:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(153, 43, 43, 0.15); /* add a subtle shadow */
+  cursor: pointer;
+}
+
+.tasks {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: 7;
+  grid-column-end: 9;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  border: 4px solid #f6f6f6;            /* Thicker border */
+  padding: 24px;                        /* More spacing */
+  border-radius: 12px;                  /* Slightly rounder corners */
+  background-color: #283071;           /* Deep blue background */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  box-sizing: border-box;
+
+  font-weight: bold;                   /* Thicker text */
+  color: #ffffff;                      /* White text for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tasks:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(153, 43, 43, 0.15); /* add a subtle shadow */
+  cursor: pointer;
+}
+.action {
+  grid-row: 2 / 3;
+  grid-column: 9 / 14;
+
+  border: 4px solid #f6f6f6;
+  padding: 24px;
+  border-radius: 12px;
+  background-color: #283071;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.action-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.action-header p {
+  margin: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.action-buttons button {
+  padding: 8px 12px;
+  background-color: #ffffff;
+  color: #283071;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.action-buttons button:hover {
+  background-color: #dcdcdc;
+}
+
+.action:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(153, 43, 43, 0.15); /* add a subtle shadow */
+  cursor: pointer;
+}
+
+
+.notes {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  grid-column-start: 12;
+  grid-column-end: 14;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  border: 4px solid #f6f6f6;            /* Thicker border */
+  padding: 24px;                        /* More spacing */
+  border-radius: 12px;                  /* Slightly rounder corners */
+  background-color: #283071;           /* Deep blue background */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  box-sizing: border-box;
+
+  font-weight: bold;                   /* Thicker text */
+  color: #ffffff;                      /* White text for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notes:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(153, 43, 43, 0.15); /* add a subtle shadow */
+  cursor: pointer;
+}
+.attendance {
+  grid-row-start: 3;
+  grid-row-end: 7;
+  grid-column-start: 7;
+  grid-column-end: 12;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  border: 4px solid #f6f6f6;            /* Thicker border */
+  padding: 24px;                        /* More spacing */
+  border-radius: 12px;                  /* Slightly rounder corners */
+  background-color: #283071;           /* Deep blue background */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  box-sizing: border-box;
+
+  font-weight: bold;                   /* Thicker text */
+  color: #ffffff;                      /* White text for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.attendance:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(153, 43, 43, 0.15); /* add a subtle shadow */
+  cursor: pointer;
+}
+.attendance-img {
+  width: 100%; /* Adjust as needed */
+  max-height: 330px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+.sidebar {
+  grid-row-start: 2;
+  grid-row-end: 7;
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+  background-color: #1f254f;
+  color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: width 0.3s ease, padding 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+.sidebar.expanded {
+  width: 175px;
+}
+
+.sidebar.collapsed {
+  width: 75px;
+  padding: 20px 10px;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.sidebar:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(153, 43, 43, 0.15); /* add a subtle shadow */
+  cursor: pointer;
+}/* Nav Bar---------------------------------------------------------------*/
+.navbar {
+  grid-row: 1 / 2;
+  grid-column: 1 / 14;
+
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+
+  background-color: #1f254f;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+}
+
+#AppName {
+  color: lightseagreen;
+}
+
+.navbar-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  gap: 3em;
+  list-style: none;
+  justify-content: end;
+  align-items: center;
+  margin-left: auto;
+}
+
+.navbar-menu li h3 {
+  cursor: pointer;
+  padding: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.navbar-menu li h3:hover {
+  text-decoration: underline;
+  color: orangered;
+  box-shadow: 5px 5px 5px orangered;
+}
+
+.Account_OwnerName {
+  color: lightseagreen;
+}
+.Account_OwnerName:hover {
+  color: white;
+  box-shadow: 5px 5px 5px white;
+}
+
+.navbar:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(153, 43, 43, 0.15);
+  cursor: pointer;
+}
+
+
+.activities {
+  grid-row-start: 5;
+  grid-row-end: 7;
+  grid-column-start: 12;
+  grid-column-end: 14;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  border: 4px solid #f6f6f6;            /* Thicker border */
+  padding: 24px;                        /* More spacing */
+  border-radius: 12px;                  /* Slightly rounder corners */
+  background-color: #283071;           /* Deep blue background */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Stronger shadow for depth */
+  box-sizing: border-box;
+
+  font-weight: bold;                   /* Thicker text */
+  color: #ffffff;                      /* White text for contrast */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.activities:hover {
+  transform: scale(1.03); 
+  box-shadow: 0 4px 12px rgba(153, 43, 43, 0.15); /* add a subtle shadow */
+  cursor: pointer;
+}

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import RequestPage from './pages/RequestPage.js';
 import MessagePage from './pages/Messages.js';
 import HomePage from './pages/Homepage.js';
+import StudentPage from './pages/StudentPerformance.js';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -11,13 +12,13 @@ function App() {
       <div className="App">
         <Navbar />
         <div className="content-area">
-              <Routes> 
-                <Route path="/" element={<HomePage />} /> 
-                <Route path="/requests" element={<RequestPage />} />
-                <Route path="/messages" element={<MessagePage />} />
-                
-              </Routes>
-            </div>
+          <Routes> 
+            <Route path="/" element={<HomePage />} /> 
+            <Route path="/requests" element={<RequestPage />} />
+            <Route path="/messages" element={<MessagePage />} />
+            <Route path="/students" element={<StudentPage/>}/> 
+          </Routes>
+        </div>
       </div>
     </Router>
   );
