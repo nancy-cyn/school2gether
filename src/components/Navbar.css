@@ -43,9 +43,13 @@
     text-decoration: none;
   }
   
- .active {
+ .nav-item .active {
     background-color: #7d8be4;
     color: white;
+    display: block; 
+    width: 100%; 
+    padding: 0.5rem 1rem;  
+    border-radius: 5px;
   }
   
   .nav-item svg { 

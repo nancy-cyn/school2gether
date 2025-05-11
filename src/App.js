@@ -7,15 +7,15 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <Router> {/* Wrap your content with Router */}
+    <Router> 
       <div className="App">
         <Navbar />
         <div className="content-area">
-              <Routes> {/* Changed to Routes */}
-                <Route path="/" element={<HomePage />} /> {/* Route syntax changed */}
+              <Routes> 
+                <Route path="/" element={<HomePage />} /> 
                 <Route path="/requests" element={<RequestPage />} />
                 <Route path="/messages" element={<MessagePage />} />
-                {/* Add other routes */}
+                
               </Routes>
             </div>
       </div>
