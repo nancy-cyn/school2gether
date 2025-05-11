@@ -6,10 +6,11 @@ import { faClock } from '@fortawesome/free-solid-svg-icons';
 import React, { useState } from "react";
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import styles from './StudentPerformance.module.css';
-import profileimg from '../images/sandile.jpg';
-import ba
+import profileimg from '../components/student.png';
+import barchart from '../images/barchart_ver_2.jpg';
+import attendance from '../images/attendance-graph-6.11.15.png';
 
-function MyStudentsDashboard() {
+function StudentPerformance() {
   const [isExpanded, setIsExpanded] = useState(true);
   return (
     <div className={styles.App}>
@@ -17,14 +18,14 @@ function MyStudentsDashboard() {
         <div className={styles.contentHeader}>
           <img src={profileimg} alt="Profile" className={styles.contentImg} />
           <div className={styles.contentText}>
-            <p>Ntuthuko Kubheka</p>
+            <p>Nkululeko Mdhluli</p>
             <p>Grade: 12</p>
           </div>
         </div>
       </div>
       <div className={styles.performance}>
         <h1>Student Performance</h1>
-        <img src="/images/barchart_ver_2.jpg" alt="Performance graph" className={styles.performanceImg} />
+        <img src={barchart} alt="Performance graph" className={styles.performanceImg} />
       </div>
       <div className={styles.active}>
         <p><FontAwesomeIcon icon={faClock} /> Last Active</p>
@@ -38,7 +39,7 @@ function MyStudentsDashboard() {
           <div className={styles.actionButtons}>
             <button>Schedule</button>
             <button><FontAwesomeIcon icon={faMessage} /> send sms</button>
-            <button>Button 3</button>
+            <button>Add Note</button>
           </div>
         </div>
       </div>
@@ -48,7 +49,7 @@ function MyStudentsDashboard() {
       </div>
       <div className={styles.attendance}>
         <h1>Attendance Rate</h1>
-        <img src="/images/attendance-graph-6.11.15.png" alt="attendance graph" className={styles.attendanceImg} />
+        <img src={attendance} alt="attendance graph" className={styles.attendanceImg} />
       </div>
       <div className={`${styles.sidebar} ${isExpanded ? styles.expanded : styles.collapsed}`}>
         <button className={styles.toggleBtn} onClick={() => setIsExpanded(!isExpanded)}>
@@ -75,4 +76,4 @@ function MyStudentsDashboard() {
   );
 }
 
-export default MyStudentsDashboard;
+export default StudentPerformance;

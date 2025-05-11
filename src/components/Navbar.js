@@ -4,6 +4,7 @@ import { LuLayoutDashboard, LuUsers, LuBell, LuCalendar, LuMessageSquare } from 
 import { FaBell } from "react-icons/fa";
 import './Navbar.css';
 import { NavLink } from 'react-router-dom';
+import { MdOutlineQuiz } from "react-icons/md";
 
 const Navbar = () => {
 
@@ -43,6 +44,12 @@ const Navbar = () => {
           <NavLink to="/messages" className="nav-link" activeClassName="active"> 
               <LuMessageSquare />
               Messages
+            </NavLink>
+          </div>
+          <div className="nav-item">
+          <NavLink to="/quiz" className="nav-link" activeClassName="active"> 
+              <MdOutlineQuiz />
+              Create Quiz
             </NavLink>
           </div>
         </div>

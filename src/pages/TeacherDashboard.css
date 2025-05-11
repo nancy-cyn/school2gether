@@ -1,0 +1,163 @@
+.BashboardContent{
+    display: grid; 
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4,1fr); 
+    gap: 1em;
+    padding: 20px;
+}
+.card_Active_Students{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 30px;
+    margin: 30px;
+    max-width: 250px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #00cfc8;
+}
+.card_Sessions{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 30px;
+    margin: 30px;
+    max-width: 250px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #00cfc8;
+}
+.card_New_Request{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 30px;
+    margin: 30px;
+    max-width: 250px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #00cfc8;
+}
+.card_This_month{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 30px;
+    margin: 30px;
+    max-width: 250px;
+    display: inline-block;
+    font-size: 20px;
+    background-color: #00cfc8;
+}
+.card_Recent_Activities{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 30px;
+    padding-left: 8px;
+    background-color: #145da0;
+    color: white;
+}
+#first_row{
+    font-size: 14px;
+    text-align: end;
+}
+
+.Recent_Activities{
+    font-size: 25px;
+    margin-bottom: 7px;
+} 
+.TutRequests{
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+.students_availablep{
+    background-color: #00cfc8;;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.new_requests{
+   background-color: #00cfc8;
+    color: white;
+    padding: 10px;
+}
+#paragraphRequest{
+    background-color: #00cfc8;
+    color: white;
+    padding: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.TutoringRequest{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 30px;
+    padding-left: 8px;
+    background-color: #145da0;
+    color: white;
+}
+.accept_btn{
+    margin-top: 2px;
+    border: 1px dolid rgb(70, 70, 173);
+    border-radius: 15px;
+    padding: 3px;
+    color: black;
+    gap: 2em;
+    font-size: 12px;
+    background: #04F39C;
+    background: linear-gradient(0deg, rgba(4, 243, 156, 1) 0%, rgba(141, 183, 205, 1) 13%, rgba(193, 160, 224, 1) 70%, rgba(200, 109, 215, 1) 91%);
+}
+.decline_btn{
+    border: 1px dolid rgb(70, 70, 173);
+    border-radius: 15px;
+    padding: 3px;
+    margin-left: 6px;
+    background-color: white;
+    color: black;
+    font-size: 12px;
+}
+.time{
+    font-size: 8px;
+}
+#Sessions{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 30px;
+    padding-left: 8px;
+    background-color: #145da0;
+    color: white;
+}
+.todaysSession{
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+.Session_p{
+    margin-top: 5px;
+    background-color: #00cfc8;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+#Performance{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 30px;
+    padding-left: 8px;
+    background-color: #145da0;
+    color:white;
+}
+#h2performance{
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+#studentRate{
+    margin-top: 5px;
+    background-color: #00cfc8;
+    color: white;
+    padding: 10px;
+    margin-bottom: 5px;
+}

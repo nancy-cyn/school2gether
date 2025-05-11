@@ -42,7 +42,7 @@ const RequestPage = () => {
             </div>
             <div className="actions">
                 <div className="search-container">
-                    <input type="text" placeholder="Search" className="search-input" />
+                    <input type="text" placeholder="Search" className="ac-search-input" />
                     <button className="search-button">
                     <FiSearch />
                     </button>
