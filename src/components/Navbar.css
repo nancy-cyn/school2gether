@@ -50,6 +50,7 @@
     width: 100%; 
     padding: 0.5rem 1rem;  
     border-radius: 5px;
+    text-decoration: none;
   }
   
   .nav-item svg { 
@@ -64,7 +65,11 @@
   }
   
   .nav-item :hover {
-    background-color: #bbdefb; /* Lighter blue on hover */
+    background-color: #bbdefb; 
+    display: block; 
+    width: 100%; 
+    padding: 0.5rem 1rem;  
+    border-radius: 5px;
   }
   
   .right-section {
