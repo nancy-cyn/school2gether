@@ -1,24 +1,32 @@
 import './Bashboard_Content.css'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCalendarDays } from '@fortawesome/free-regular-svg-icons'
+import { faUserGroup } from '@fortawesome/free-solid-svg-icons/faUserGroup'
+import { faBell } from '@fortawesome/free-regular-svg-icons'
+import { faHandHoldingDollar } from '@fortawesome/free-solid-svg-icons'
 
 const Bashboard_content = () => {
     return ( 
         <div className="BashboardContent">
-            <div className="card_Active_Students">
+            <div className="card_Active_Students"> 
+                <FontAwesomeIcon icon={faUserGroup} />
                 <p id='first_row'>+2 new students</p>
                 <h3>24</h3>
                 Active Students
             </div>
             <div className="card_Sessions">
+                <FontAwesomeIcon icon={faCalendarDays} /> 
                 <p id='first_row'>3 sessions remaining</p>
                 <h3>8</h3>
                 Sessions Today
             </div>
             <div className="card_New_Request">
-                <p id='first_row'>2 pending request</p>
+                <FontAwesomeIcon icon={faBell} /> <p id='first_row'>2 pending request</p>
                 <h3>2</h3>
                 New Request
             </div>
             <div className="card_This_month">
+                <FontAwesomeIcon icon={faHandHoldingDollar} /> 
                 <p id='first_row'>+15% vs last month</p>
                 <h3>R3000</h3>
                 This_month

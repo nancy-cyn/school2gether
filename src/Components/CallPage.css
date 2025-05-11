@@ -1,6 +1,6 @@
 .Call_Page{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     padding: 20px;
     gap: 20px;
@@ -28,4 +28,49 @@
     max-width: 250px;
     font-size: 15px;
     background-color: white;
+}
+.section1{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1em;
+}
+.section2{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1384b8;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 60px;
+}
+#First3Icons{
+    padding-left: 10px;
+    gap: 1em;
+    display: flex;
+}
+#icon2{
+    margin-right: 60px;
+    gap: 1em;
+    display: flex;
+}
+#btn_file{
+    border: 1px;
+    border-radius: 5px;
+}
+#btn_chat{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: none;
+}
+#btn_share_screen{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    border: none;
 }
