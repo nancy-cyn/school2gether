@@ -1,0 +1,11 @@
+.grade {
+    max-width: 300px;
+    height: 75px;
+    margin-left: 1150px;    /* 300px (Session width) + 40px (Session margin) + 20px (extra spacing) */
+    margin-top: -107px;    /* Negative margin to pull up (Session height 300px - some adjustment) */
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    background-color: #145da0;
+    position: relative;    /* Needed for proper stacking */
+  }

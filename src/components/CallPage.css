@@ -1,0 +1,31 @@
+.Call_Page{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+}
+
+#Contacts_List{
+    margin-top: 19px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 30px;
+    max-width: 250px;
+    font-size: 15px;
+    background-color: white;
+}
+#Video_div{
+    margin-left: 10px;
+}
+#Resources{
+    margin-top: 19px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 30px;
+    max-width: 250px;
+    font-size: 15px;
+    background-color: white;
+}

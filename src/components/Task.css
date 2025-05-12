@@ -1,0 +1,27 @@
+.tasks {
+    display: flex;                 /* Places items in a row */
+    align-items: center;          /* Vertically centers them */
+    justify-content: space-between;
+    max-width: 300px;
+    height: 75px;
+    margin-left: 400px;
+    margin-top: -765px;
+    padding: 15px;
+    border: 2px solid #000000;
+    border-radius: 8px;
+    background-color: #145da0;
+    position: relative;
+  }
+  
+  .task-image {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-left: 10px;
+  }
+  
+  .task-text h2 {
+    margin: 0;
+    font-size: 16px;
+  }
+  

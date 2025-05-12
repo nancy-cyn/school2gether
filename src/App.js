@@ -1,8 +1,13 @@
+import CallPage from './components/CallPage.js';
+import MyStudents from './components/MyTutors.js';
+import StudentDashboard from './components/dashboard.js';
 import Quizzes from './components/quizes';
 import QuizInstructions from './components/instructions';
 import ActualQuiz from './components/actual_quiz';
-import Timetable from './components/timetable'; // assuming this is your new component
+import Timetable from './components/timetable';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
+
 
 function App() {
   return (
@@ -12,6 +17,10 @@ function App() {
         <Route path="/instructions" element={<QuizInstructions />} />
         <Route path="/actual_quiz" element={<ActualQuiz />} />
         <Route path="/timetable" element={<Timetable />} />
+      <Route path="/callpage" element={<CallPage />} />
+      <Route path="/tutors" element={<MyStudents/>}/>
+      <Route path="/dashboard" element={<StudentDashboard/>}/> 
+ 
       </Routes>
     </Router>
   );

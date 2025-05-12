@@ -3,8 +3,11 @@ import {
  Clock, Download, RefreshCw,  
 } from 'lucide-react';
 import Navbar from './navbar';
+import { useNavigate } from 'react-router-dom';
 
 const Time = () => {
+  const navigate = useNavigate();
+
   const weeklySchedule = [
     {
       day: 'Monday',
@@ -50,13 +53,16 @@ const Time = () => {
     }
   ];
 
+  const handleJoinClass = (classItem) => {
+    navigate('/CallPage', { 
+    });
+  };
+
   return (
     <div className={styles.dashboardContainer}>
-            <Navbar />
+      <Navbar />
 
-      {/* Main Content Container */}
       <div className={styles.contentContainer}>
-        {/* Weekly Schedule */}
         <div className={styles.weeklySchedule}>
           <div className={styles.timeColumn}>
             {[8, 9, 10, 11, 12, 13, 14, 15, 16, 17].map((hour) => (
@@ -104,7 +110,6 @@ const Time = () => {
           </div>
         </div>
         
-        {/* Right Sidebar */}
         <div className={styles.sidebar}>
           <div className={styles.todayClasses}>
             <h2 className={styles.sectionHeading}>Today's Classes</h2>
@@ -113,7 +118,12 @@ const Time = () => {
               <div key={index} className={styles.todayClassCard}>
                 <div className={styles.classHeader}>
                   <h3 className={styles.classTitle}>{classItem.subject}</h3>
-                  <button className={styles.joinBtn}>Join Class</button>
+                  <button 
+                    className={styles.joinBtn}
+                    onClick={() => handleJoinClass(classItem)}
+                  >
+                    Join Class
+                  </button>
                 </div>
                 <div className={styles.classDetails}>
                   <p>{classItem.teacher}</p>
