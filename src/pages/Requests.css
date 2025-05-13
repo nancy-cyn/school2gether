@@ -107,7 +107,7 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
-    width: 90%; /* Make buttons take full width of container */
+    width: 90%;
     box-sizing: border-box; /* Ensure padding doesn't increase button width */
     background-color: #00cfc8;
     font-size: 15px;
@@ -121,7 +121,14 @@
   .quick-action svg{
     font-size:2em;
   }
-  
+  .btn-schedule-link{
+    text-decoration: none;
+    width: 100%;
+  }
+  .btn-schedule:hover, .btn-availability:hover{
+    background-color: #059994;
+  }
+
   .actions {
     display: flex;
     gap: 30px; 

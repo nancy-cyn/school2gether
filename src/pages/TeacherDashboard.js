@@ -21,7 +21,7 @@ const DashboardContent = () => {
             <div className="card_This_month">
                 <p id='first_row'>+15% vs last month</p>
                 <h3>R3000</h3>
-                This_month
+                This month
             </div>
             <div className='card_Recent_Activities'>
                 <h2 className='Recent_Activities'>Recent Activities</h2>
