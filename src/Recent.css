@@ -1,0 +1,39 @@
+.recent-box {
+    background-color: rgb(4, 4, 78);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    top: 730px; /* Adjust these values */
+    left: 1100px; /* to position manually */
+    border-radius: 10px;
+    width: 300px;
+    height: auto;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .recent-title{
+    font-size: 25px;
+  }
+  
+  .recent-content {
+    line-height: 1.6;
+  }
+  
+  .recent-content p {
+    margin: 8px 0;
+    padding: 5px 0;
+    font-size: 20px;
+  }
+  .icon-clock {
+    font-size: 0.9em; /* Slightly smaller than text */
+    margin-right: 8px;
+    opacity: 0.8;
+  }
+  .icon-check {
+    font-size: 0.8em; /* Smaller size */
+    margin-right: 6px;
+    color: #4CAF50; /* Optional: green checkmark */
+  }

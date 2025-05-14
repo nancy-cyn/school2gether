@@ -1,0 +1,19 @@
+.task-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; /* ensure full width */
+    margin: 80px 30px 30px 30px;
+    gap: 20px;
+  }
+  
+  .task-box {
+    width: 250px; 
+    height: 150px;
+    background-color: rgb(4, 4, 78);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  
