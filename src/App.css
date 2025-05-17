@@ -1,0 +1,36 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.content {
+  padding: 20px;
+  flex: 1;
+  overflow: visible;
+}
+
+/* New wrapper for side-by-side boxes */
+.boxes-container {
+  display: flex;
+  gap: 40px;
+  padding: 20px;
+  align-items: flex-start; /* Align boxes at the top */
+  justify-content: center; /* Center the pair horizontally */
+  flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+/* Responsive adjustment */
+@media (max-width: 900px) {
+  .boxes-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
+.english-box-container {
+  position: relative;
+  width: 100%;
+  min-height: 500px; /* Ensure space for absolute positioning */
+}

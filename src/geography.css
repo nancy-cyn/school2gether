@@ -1,0 +1,70 @@
+/* Main Box with Absolute Positioning */
+.geography-box {
+    /* Box Size */
+    width: 400px;
+    min-height: 200px;
+    padding: 25px;
+    
+    /* Absolute Positioning - Right of Social box */
+    position: absolute;
+    top: 780px;    /* Same vertical as Social */
+    left: 1070px;   /* Right column position */
+    
+    /* Visual Style */
+    background-color: #f0f8ff;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+  
+/* Title */
+.geography-title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+  
+/* Content Area */
+.geography-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+  
+/* Image */
+.geography-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+  
+/* Text */
+.geography-text {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.geography-text p {
+    margin: 12px 0;
+    color: #333;
+}
+  
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .geography-box {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        top: auto;
+        left: auto;
+        max-width: 400px;
+    }
+}

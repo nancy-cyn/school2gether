@@ -1,0 +1,70 @@
+/* Main Box with Absolute Positioning */
+.social-box {
+    /* Box Size */
+    width: 400px;
+    min-height: 200px;
+    padding: 25px;
+    
+    /* Absolute Positioning */
+    position: absolute;
+    top: 780px;    /* Below Science/Skills boxes */
+    left: 570px;    /* Aligned with left column */
+    
+    /* Visual Style */
+    background-color: #f0f8ff;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    
+    /* Layout */
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+  
+/* Title */
+.social-title {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+  
+/* Content Area */
+.social-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+  
+/* Image */
+.social-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+  
+/* Text */
+.social-text {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.social-text p {
+    margin: 12px 0;
+    color: #333;
+}
+  
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .social-box {
+        position: relative;
+        width: 90%;
+        margin: 20px auto;
+        top: auto;
+        left: auto;
+        max-width: 400px;
+    }
+}

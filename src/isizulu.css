@@ -1,0 +1,65 @@
+/* Reset any parent container constraints */
+.zulu-box-container {
+    display: block;
+    width: 100%;
+    overflow: visible;
+  }
+  
+  /* Main Box Styles */
+  .zulu-box {
+    width: 400px;
+    min-height: 200px;
+    margin-top: -380px; 
+    margin-left: 50px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+    padding: 25px;
+    background-color: #f0f8ff;
+    border: 1px solid #d3d3d3;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    font-family: Arial, sans-serif;
+    display: block;
+    box-sizing: border-box;
+    position: relative;
+  }
+  
+  /* Content Styles */
+  .zulu-title {
+    color: #e67e22;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .zulu-content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .zulu-image {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    flex-shrink: 0; /* Prevents image from shrinking */
+  }
+  
+  .zulu-text {
+    flex: 1;
+    line-height: 1.6;
+  }
+  
+  .zulu-text p {
+    margin: 12px 0;
+    color: #333;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .zulu-box {
+      width: 90%;
+      margin: 150px auto 10px auto; /* Center on small screens */
+      max-width: 400px;
+    }
+  }
