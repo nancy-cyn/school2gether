@@ -1,0 +1,13 @@
+.StudentFindTutorBodyProfileCardDisplay {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 20%;
+    position: absolute;
+    top: 50%;  
+    max-width: 50%;
+    left: 30%;
+    gap: 0%;
+}

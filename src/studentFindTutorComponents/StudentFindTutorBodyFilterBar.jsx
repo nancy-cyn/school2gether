@@ -1,13 +1,14 @@
+import './StudentFindTutorBodyFilterBar.css';
 const StudentFindTutorBodyFilterBar = () => {
     return ( 
         <div className="StudentFindTutorBodyFilterBar">
-            <h3>Filters</h3>
+            <h2>Search Criteria</h2>
             <div className="StudentFindTutorBodyFilterBarBox">
                 <div className="StudentFindTutorBodyFilterBarPriceDiv">
                     <form action="" className="StudentFindTutorBodyFilterBarPriceForm">
                         <select name="Price" id="StudentFindTutorBodyFilterBarPriceDropDownList">
-                            <option value="DefaultStatement">Choose a Price</option>
-                            <option value="0-200">R0 - R200</option>
+                            <option value="DefaultStatement">Choose a Price Range</option>
+                            <option value="0-200">R0 - R200</option> 
                             <option value="201-400">R201 - R400</option>
                             <option value="401-600">R401 - R600</option>
                             <option value="601-800">R601 - R800</option>
@@ -19,50 +20,42 @@ const StudentFindTutorBodyFilterBar = () => {
                     <form action="" className="StudentFindTutorBodyFilterBarSubjectForm">
                         <select name="Subject" id="StudentFindTutorBodyFilterBarSubjectDropDownList">
                             <option value="DefaultStatement">Choose a Subject</option>
-                            <option value="Language">Languages{/*Languages */}
-                                <select name="LanguageDropDown" id="StudentFindTutorBodyFilterBarSubjectDropDownListLanguages">
-                                    <option value="English">English</option>
-                                    <option value="Afrikaans">Afrikaans</option>
-                                    <option value="isiXhosa">isiXhosa</option>
-                                    <option value="isiZulu">isiZulu</option>
-                                    <option value="Sepedi">Sepedi</option>
-                                    <option value="Setswana">Setswana</option>
-                                    <option value="Sesotho">Sesotho</option>
-                                    <option value="isiNdebele">isiNdebele</option>
-                                    <option value="isiSwati">isiSwati</option>
-                                    <option value="Tshivenda">Tshivenda</option>
-                                    <option value="xiTsonga">xiTsonga</option>
-                                </select>
-                            </option>                      
-                            <option value="STEM">STEM{/*Science Technology Economics Mathematics*/}
-                                <select name="STEMDropDown" id="StudentFindTutorBodyFilterBarSubjectDropDownListSTEM">
-                                    <option value="Mathematics">Mathematics</option>
-                                    <option value="MathematicalLiteracy">Mathematical Literacy</option>
-                                    <option value="History">History</option>
-                                    <option value="Geography">Geography</option>
-                                    <option value="Biology">Biology</option>
-                                    <option value="Physics">Physics</option>
-                                    <option value="Chemistry">Chemistry</option>
-                                    <option value="Accounting">Accounting</option>
-                                    <option value="Economics">Economics</option>
-                                    <option value="BusinessStudies">Business Studies</option>
-                                    <option value="InformationTechnology">Information Technology</option>
-                                    <option value="ComputerApplicationsTechnology">Computer Applications Technology</option>
-                                </select>
-                            </option>
-                            <option value="TheArts">The Arts{/*The Arts*/}
-                                <select name="TheArtsDropDown" id="StudentFindTutorBodyFilterBarSubjectDropDownListTheArts">
-                                    <option value="VisualArts">Visual Arts</option>
-                                    <option value="Music">Music</option>
-                                    <option value="Drama">Drama</option>
-                                </select>
-                            </option>
-                            <option value="Other">Other{/*Other*/} 
-                                <select name="OtherDropDown" id="StudentFindTutorBodyFilterBarSubjectDropDownListOther">
+                            <optgroup label="Languages">{/*Languages */}                               
+                                <option value="English">English</option>
+                                <option value="Afrikaans">Afrikaans</option>
+                                <option value="isiXhosa">isiXhosa</option>
+                                <option value="isiZulu">isiZulu</option>
+                                <option value="Sepedi">Sepedi</option>
+                                <option value="Setswana">Setswana</option>
+                                <option value="Sesotho">Sesotho</option>
+                                <option value="isiNdebele">isiNdebele</option>
+                                <option value="isiSwati">isiSwati</option>
+                                <option value="Tshivenda">Tshivenda</option>
+                                <option value="xiTsonga">xiTsonga</option>
+                            </optgroup>                      
+                            <optgroup label="STEM">{/*Science Technology Economics Mathematics*/}
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="MathematicalLiteracy">Mathematical Literacy</option>
+                                <option value="History">History</option>
+                                <option value="Geography">Geography</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Accounting">Accounting</option>
+                                <option value="Economics">Economics</option>
+                                <option value="BusinessStudies">Business Studies</option>
+                                <option value="InformationTechnology">Information Technology</option>
+                                <option value="ComputerApplicationsTechnology">Computer Applications Technology</option>
+                            </optgroup>
+                            <optgroup label="TheArts">{/*The Arts*/}
+                                <option value="VisualArts">Visual Arts</option>
+                                <option value="Music">Music</option>
+                                <option value="Drama">Drama</option>
+                            </optgroup>
+                            <optgroup label="Other">{/*Other*/} 
                                     <option value="LifeOrientation">Life Orientation</option>
                                     <option value="ReligiousEducation">Religious Education</option>
-                                </select>
-                            </option>                   
+                            </optgroup>                   
                         </select>   
                         <select name="Grade" id="StudentFindTutorBodyFilterBarGradeDropDown">
                             <option value="DefaultStatement">Choose a Grade</option>
