@@ -3,7 +3,7 @@
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgb(4, 4, 78);
     padding: 20px;
-    margin: 80px 0 30px 30px; /* space for navbar and left alignment */
+    margin: 25px 0 30px 30px; /* space for navbar and left alignment */
     width: 350px;
     display: flex;
     flex-direction: column;

@@ -14,18 +14,29 @@ import Assignment from './Assignment';
 import Progress from './Progress';
 import Resources from './Resources';
 import Recent from './Recent';
+import Navbar from './Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Session />
-      <Tasks />
-      <Study /> 
-      <Assignment /> 
-      <Progress /> 
-      <Resources /> 
-      <Recent /> 
+    <Router>
+        <div>
+        <Navbar/>
+        <Routes>
+          {/* <Route path='' element={}/> */}
+        </Routes>
+      <div className="App">
+        <Session />
+        <Tasks />
+        <Study /> 
+        <Assignment /> 
+        <Progress /> 
+        <Resources /> 
+        <Recent /> 
+      </div>
     </div>
+    </Router>
+    
   );
 }
 
