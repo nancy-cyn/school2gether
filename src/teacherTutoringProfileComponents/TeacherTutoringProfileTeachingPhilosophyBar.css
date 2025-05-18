@@ -1,0 +1,26 @@
+  /* color:#00cfc8;
+    background-color: #145da0; */
+.TeacherTutoringProfileTeachingPhilosophyBar {
+  margin-top: 1%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  max-width: 90%;
+  height: 100%;
+  background-color: #145da0;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 3%;
+}
+.TeacherTutoringProfileTeachingPhilosophyBar h1 {
+  color: white;
+  font-size: 2em;
+  margin-bottom: 2%;
+}
+.TeacherTutoringProfileTeachingPhilosophyBar textarea {
+  color: black;
+  font-size: 1em;
+  width: 100%;
+  
+}
