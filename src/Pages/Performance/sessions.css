@@ -1,0 +1,28 @@
+.main_box {
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(4, 4, 78);
+    padding: 20px;
+    margin: 20px 0 20px 30px; /* space for navbar and left alignment */
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f8f8f8;
+}
+
+.main_box h2{
+    font-size: 25px;
+}
+
+.inner_box {
+    background-color: rgb(4, 4, 78);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: start;
+    
+}
+.inner_box p{
+    font-size: 15px; /* Replace xx-small with this */
+  }

@@ -1,0 +1,54 @@
+.assignment-box {
+    background-color: rgb(4, 4, 78);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    margin-top: 160px;
+    /* top: 300px; Adjust these values to position */
+    left: 950px;  /* wherever you want */
+    border-radius: 10px;
+    width: 450px; /* Narrower to fit buttons better */
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  
+  .assignment-title {
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .assignment-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Space between buttons */
+  }
+  
+  .assignment-btn {
+    background-color: rgb(30, 30, 120);
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    text-align: start;
+  }
+  
+  .assignment-btn:hover {
+    background-color: rgb(50, 50, 150);
+  }
+  
+  /* Active/focus states */
+  .assignment-btn:active,
+  .assignment-btn:focus {
+    outline: 2px solid rgba(255, 255, 255, 0.5);
+  }
+  .assignment-icon {
+    font-size: 0.9em; /* Adjust size as needed */
+    margin-right: 8px; /* Space between icon and text */
+    vertical-align: middle; /* Aligns icon with text */
+  }

@@ -1,0 +1,58 @@
+.resources-box {
+    background-color: rgb(4, 4, 78);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    margin-top: 410px;
+    /* top: 730px; Adjust these */
+    left: 400px; /* to position */
+    border-radius: 10px;
+    width: 600px;
+    height: auto;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .resources-title {
+    margin: 0 0 20px 0;
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  .button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 2 columns */
+    grid-template-rows: 1fr 1fr; /* 2 rows */
+    gap: 12px; /* Space between buttons */
+  }
+  
+  .resource-btn {
+    background-color: rgb(30, 30, 120);
+    color: white;
+    border: none;
+    padding: 12px 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: all 0.3s;
+    text-align: center;
+    min-height: 60px; /* Uniform button height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .resource-btn:hover {
+    background-color: rgb(50, 50, 150);
+    transform: translateY(-2px);
+  }
+  
+  .resource-btn:active {
+    transform: translateY(0);
+  }
+  .resource-icon {
+    font-size: 1.3em;
+  }

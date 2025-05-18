@@ -1,0 +1,23 @@
+.task-row {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%; /* ensure full width */
+    margin: 25px 30px 30px 30px;
+    gap: 2em;
+    font-size: 10px;
+  }
+  
+  .task-box {
+    width: 250px; 
+    height: 90px;
+    background-color: rgb(4, 4, 78);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  #PendingTasks{
+    font-size: 25px;
+  }
+  
+  

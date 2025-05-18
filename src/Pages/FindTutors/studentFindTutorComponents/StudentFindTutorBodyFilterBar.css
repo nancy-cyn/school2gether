@@ -1,0 +1,18 @@
+.StudentFindTutorBodyFilterBar {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  margin-top: 90px;
+  max-width: 50%;
+  margin-left: 300px;
+}
+.StudentFindTutorBodyFilterBar div.StudentFindTutorBodyFilterBarPriceDiv, div.StudentFindTutorBodyFilterBarSubjectDiv {
+  display: inline-block;
+}
+.StudentFindTutorBodyFilterBar h2 {
+  display: inline;
+  margin-top: 2%;
+  margin-right: 2%;
+}

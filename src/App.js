@@ -1,40 +1,24 @@
-import './App.css';
-import './sessions.css';
-import './Tasks.css';
-import './Study.css';
-import './Assignment.css';
-import './Progress.css';
-import './Resources.css';
-import './Recent.css'
-
-import Session from './sessions';
-import Tasks from './Tasks';
-import Study from './Study';
-import Assignment from './Assignment';
-import Progress from './Progress';
-import Resources from './Resources';
-import Recent from './Recent';
-import Navbar from './Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+// import './App.css';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import Performance from './Pages/Performance/Performance';
+import StudentFindApp from './Pages/FindTutors/StudentFindTutorApp';
+import MessagesPage from './Pages/Messages/Messages';
+import MyTutors from './Pages/CurrentTutors/MyTutors';
 
 function App() {
   return (
     <Router>
-        <div>
+       
         <Navbar/>
         <Routes>
-          {/* <Route path='' element={}/> */}
+            <Route path='/' element={<StudentFindApp/>}/>
+            <Route path='/performance' element={<Performance/>}/>
+            <Route path='/messages' element={<MessagesPage/>}/>
+            <Route path='/tutors' element={<MyTutors/>}/>
         </Routes>
-      <div className="App">
-        <Session />
-        <Tasks />
-        <Study /> 
-        <Assignment /> 
-        <Progress /> 
-        <Resources /> 
-        <Recent /> 
-      </div>
-    </div>
+
+
     </Router>
     
   );

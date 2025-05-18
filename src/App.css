@@ -1,9 +1,5 @@
 *{
-  padding: auto;
-  margin: 0;
-  font-size: 40px;
+    padding: auto;
+    /* margin: 0; */
+    /* font-size: 40px; */
 }
-.App{
-  display: flex;
-}
-

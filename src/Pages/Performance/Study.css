@@ -1,0 +1,44 @@
+.study-box {
+    background-color: rgb(4, 4, 78);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    /* top: 200px; */
+    margin-top: 160px;
+    left: 420px;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    height: 199px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .study-title {
+    margin: 0 0 15px 0;
+  }
+  .study-title h2{
+    font-size: 20px;
+  }
+  
+  .study-image-container {
+    flex: 1;
+    min-height: 140px; /* Reduced minimum height */
+    max-height: 300px; /* Added maximum height */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 4, 78);
+  }
+  
+  .study-image {
+    width: auto; /* Let the image determine width */
+    height: auto; /* Let the image determine height */
+    max-width: 90%; /* Limits image width */
+    max-height: 90%; /* Limits image height */
+    object-fit: contain;
+    display: block;
+  }

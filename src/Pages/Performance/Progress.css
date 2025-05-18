@@ -1,0 +1,46 @@
+.progress-box {
+    background-color: rgb(4, 4, 78);
+    color: white;
+    padding: 20px;
+    position: absolute;
+    /* bottom: -50px; Adjust position */
+    margin-top: 400px;
+    left: 30px; 
+    border-radius: 10px;
+    width: 260px;
+    height: 120px; /* Flexible height */
+    min-height: 240px; /* Minimum height */
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .progress-title {
+    margin: 0 0 15px 0;
+    font-size: 25px; /* Slightly smaller for narrow box */
+    text-align: center;
+    white-space: nowrap; /* Prevent title wrapping */
+  }
+  
+  .progress-image-container {
+    flex: 1;
+    min-height: 120px; /* Reduced minimum height */
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(4, 4, 78);
+  }
+  
+  .progress-image {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+  }
+  

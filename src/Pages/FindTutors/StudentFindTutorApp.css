@@ -1,0 +1,41 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  /* margin:0px; */
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+.StudentFindTutorSearchTutorButton button  {
+  display: inline-block;
+  position: absolute;
+  background-color: #145da0;
+  color: white;
+  font-size: 14px;
+  padding: 14px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  right: 3%;
+  margin-top: 119px;
+}
+.StudentFindTutorSearchTutorButton button:hover{
+    background-color:#00cfc8 ;
+    color: black;
+}
+.StudentFindTutorCount{
+  display: inline-block;
+  position: absolute;
+  left: 80%;
+  top: 29%;
+  font-size: 15px;
+  font: bold;
+  font-style: italic;
+}
