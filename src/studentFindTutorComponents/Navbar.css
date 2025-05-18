@@ -1,0 +1,26 @@
+#Navbar{
+    padding: 0;
+    margin: 0;
+}
+#Content{
+    display: flex;
+    background-color: navy;
+    justify-content: space-between;
+    padding-left: 27px;
+    padding-right: 10px;
+    align-items: center;
+}
+#Links a{
+    text-decoration: none;
+    color:black;
+    justify-content: space-between;
+    margin-left: 15px;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 7px;
+    background-color: aquamarine;
+} 
+#ProjectName{
+    color: white;
+}
+

@@ -5,6 +5,7 @@ import StudentFindTutorRefineSearchSidebar from './studentFindTutorComponents/St
 import { useState } from 'react';
 import StudentFindTutorBodyFilterBar from './studentFindTutorComponents/StudentFindTutorBodyFilterBar';
 import StudentFindTutorBodyProfileCardDisplayArea from './studentFindTutorComponents/StudentFindTutorBodyProfileCardDisplayArea';
+import Navbar from './studentFindTutorComponents/Navbar';
 
 function StudentFindApp() {
     const[foundTutorCount, setFindTutorCount] =  useState('N/A');
@@ -13,11 +14,7 @@ function StudentFindApp() {
     }
     return (
         <div className="StudentFindTutorApp">
-            {/* <div className="StudentFindTutorNavBar"> 
-                <StudentNavbar />
-            </div> */}
-
-            {/*Title  card*/}
+            <Navbar/>
             <StudentFindTutorTitleCard />
             
             <div className="StudentFindTutorBodyContent">

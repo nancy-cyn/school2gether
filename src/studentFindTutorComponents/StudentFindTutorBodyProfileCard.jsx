@@ -6,15 +6,13 @@ const StudentFindTutorBodyProfileCard = () => {
         <div className="StudentFindTutorBodyProfileCard">
             <div className="StudentFindTutorBodyProfileCardProfileImage">
                 <img src= {student_profilePortrait}alt="A tutor" />
-                <h2>John Doe</h2> 
+                <h2 id='TutorName'>John Doe</h2> 
                 <span>Mathematics</span>
             </div>
             <div className="StudentFindTutorBodyProfileCardRatingImage">
                 <img src={starRating} alt="Star rating" />
             </div>
             <div className="StudentFindTutorBodyProfileCardInfo">
-                {/* <h2>John Doe</h2>{/* All values herein to become dynamic 
-                <span>Mathematics</span> */}
                 <p>Experience: 5 years</p>
                 <p>BSc Mathematics</p>
                 <p>R300/hour</p>
