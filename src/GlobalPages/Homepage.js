@@ -1,8 +1,14 @@
 import React from 'react';
 import './Homepage.css';
-import logo from '../components/logo.png'; 
+import logo from '../components/logo.png';
+import { useNavigate } from 'react-router-dom'; 
 
 function HomePage() {
+  const navigate = useNavigate(); // Initialize useNavigate
+
+  const handleGetStartedClick = () => {
+    navigate('/signup'); 
+  };
   return (
     <div className="home-page-container">
       <header className="home-header">
@@ -11,7 +17,7 @@ function HomePage() {
         <p className="tagline">
           Empowering learning communities by connecting teachers, parents, and students.
         </p>
-        <button className="get-started-button">Get Started</button>
+        <button className="get-started-button" onClick={handleGetStartedClick}>Get Started</button>
       </header>
 
       <main className="home-main">

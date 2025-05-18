@@ -36,7 +36,7 @@ useEffect(() => {
         <img src={logo} alt="logo" className='logo' />
         <div className="nav-links">
           <div className="nav-item">
-            <NavLink to="/dashboard" className="nav-link" activeClassName="active"> 
+            <NavLink to="/teacher-dashboard" className="nav-link" activeClassName="active"> 
               <LuLayoutDashboard />
               Dashboard
             </NavLink>
