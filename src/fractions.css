@@ -1,0 +1,82 @@
+/* Main card container */
+.fractions-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 600px;
+    left: 50px;
+}
+
+/* Image container */
+.fractions-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Info section */
+.fractions-info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 10px;
+}
+
+/* Left content */
+.fractions-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.fractions-left-content h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.fractions-left-content .fractions-tutor-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.fractions-left-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+    display: flex;
+    gap: 10px;
+}
+
+/* Right buttons */
+.fractions-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fractions-action-buttons button {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.fractions-action-buttons button:hover {
+    background-color: #4fa8d3;
+}

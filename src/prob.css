@@ -1,0 +1,86 @@
+/* Main card container - now matches others exactly */
+.probability-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 200px;
+    left: 1100px;
+}
+
+/* Image styles - simplified to match others */
+.prob-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Info section - now identical spacing to other components */
+.prob-info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 10px; /* Reduced from 15px */
+}
+
+/* Left content - scaled back to match */
+.prob-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.prob-left-content h2 {
+    margin: 0 0 8px 0; /* Reduced from 10px */
+    font-size: 1.2rem; /* Reduced from 1.25rem */
+    color: #333; /* Lighter than previous #2c3e50 */
+}
+
+.prob-left-content .prob-tutor-avatar {
+    width: 40px; /* Reduced from 42px */
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px; /* Reduced from 12px */
+    border: none; /* Removed special border */
+}
+
+.prob-left-content p {
+    margin: 0; /* Changed from 3px 0 */
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Button styles - now matching others exactly */
+.prob-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px; /* Reduced from 10px */
+}
+
+.prob-action-buttons .prob-btn {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 6px 12px; /* Reduced from 8px 14px */
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold; /* Changed from 600 */
+    font-size: 0.85rem; /* Reduced from 0.9rem */
+    min-width: auto; /* Removed fixed min-width */
+}
+
+.prob-action-buttons .prob-btn:hover {
+    background-color: #4fa8d3;
+    transform: none; /* Removed translate effect */
+}
+
+/* Interaction icons - now matching */
+.prob-left-content svg {
+    margin-right: 3px;
+    font-size: 0.8rem;
+}

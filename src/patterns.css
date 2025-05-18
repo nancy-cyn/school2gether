@@ -1,0 +1,76 @@
+.patterns-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 200px;
+    left: 750px; /* Positioned further right */
+}
+
+.patterns-image-holder img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Info panel - flex row */
+.patterns-info-panel {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 10px;
+}
+
+/* Left side content */
+.patterns-content-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.patterns-content-left h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.patterns-content-left .patterns-user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.patterns-content-left p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Right side buttons */
+.patterns-button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.patterns-button-group .patterns-btn {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: background-color 0.3s;
+}
+
+.patterns-button-group .patterns-btn:hover {
+    background-color: #4fa8d3;
+}

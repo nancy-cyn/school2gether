@@ -1,0 +1,44 @@
+.filt-filter-container {
+  font-family: 'Arial', sans-serif;
+  z-index: 100;
+}
+
+.filt-filter-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.filt-filter-dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 35px 8px 15px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  background-color: white;
+  font-size: 0.9rem;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  width: 180px;
+  transition: all 0.3s ease;
+}
+
+.filt-filter-dropdown:hover {
+  border-color: #61dafb;
+}
+
+.filt-filter-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Remove default dropdown arrow in IE */
+.filt-filter-dropdown::-ms-expand {
+  display: none;
+}

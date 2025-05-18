@@ -1,0 +1,83 @@
+/* Main card container - matches others exactly */
+.finance-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 600px;
+    left: 1100px;
+}
+
+/* Image styles - matches others */
+.finance-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Info section - identical spacing */
+.finance-info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 10px;
+}
+
+/* Left content - matching style */
+.finance-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.finance-left-content h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.finance-left-content .finance-tutor-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.finance-left-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+/* Button styles - identical to others */
+.finance-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.finance-action-buttons .finance-btn {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.finance-action-buttons .finance-btn:hover {
+    background-color: #4fa8d3;
+}
+
+/* Interaction icons - matching */
+.finance-left-content svg {
+    margin-right: 3px;
+    font-size: 0.8rem;
+}
