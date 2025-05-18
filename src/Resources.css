@@ -3,7 +3,8 @@
     color: white;
     padding: 20px;
     position: absolute;
-    top: 730px; /* Adjust these */
+    margin-top: 480px;
+    /* top: 730px; Adjust these */
     left: 420px; /* to position */
     border-radius: 10px;
     width: 600px;

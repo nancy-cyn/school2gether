@@ -3,12 +3,13 @@
     color: white;
     padding: 20px;
     position: absolute;
-    top: 300px;
+    /* top: 200px; */
+    margin-top: 220px;
     left: 420px;
     border-radius: 10px;
     text-align: center;
-    width: 450px;
-    height: auto; /* Flexible height */
+    width: 400px;
+    height: 199px;
     display: flex;
     flex-direction: column;
   }

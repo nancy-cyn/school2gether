@@ -3,11 +3,12 @@
     color: white;
     padding: 20px;
     position: absolute;
-    top: 300px; /* Adjust these values to position */
+    margin-top: 220px;
+    /* top: 300px; Adjust these values to position */
     left: 950px;  /* wherever you want */
     border-radius: 10px;
     width: 450px; /* Narrower to fit buttons better */
-    height: 369px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     z-index: 10;

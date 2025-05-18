@@ -10,9 +10,9 @@ function Assignment() {
       <div className="assignment-buttons">
         <button className="assignment-btn"><FontAwesomeIcon icon={faPenToSquare} className="assignment-icon" />Math Homework</button>
         <button className="assignment-btn"><FontAwesomeIcon icon={faPenToSquare} className="assignment-icon" />Science Project</button>
-        <button className="assignment-btn"><FontAwesomeIcon icon={faPenToSquare} className="assignment-icon" />History Essay</button>
-        <button className="assignment-btn"><FontAwesomeIcon icon={faPenToSquare} className="assignment-icon" />Literature Review</button>
-        <button className="assignment-btn"><FontAwesomeIcon icon={faPenToSquare} className="assignment-icon" />Afrikans HL paper2</button>
+        {/* <button className="assignment-btn"><FontAwesomeIcon icon={faPenToSquare} className="assignment-icon" />History Essay</button> */}
+        {/* <button className="assignment-btn"><FontAwesomeIcon icon={faPenToSquare} className="assignment-icon" />Literature Review</button>
+        <button className="assignment-btn"><FontAwesomeIcon icon={faPenToSquare} className="assignment-icon" />Afrikans HL paper2</button> */}
         <button className="assignment-btn">
           <FontAwesomeIcon icon={faPenToSquare} className="assignment-icon" />
           Accounting
