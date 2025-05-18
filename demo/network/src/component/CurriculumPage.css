@@ -1,0 +1,47 @@
+.curriculum-container {
+  text-align: center;
+  background-color: #f9f9f9;
+  padding: 100px;
+}
+
+.curriculum-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.curriculum-block {
+  width: 280px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.curriculum-block img {
+  width: 100px;
+  height: auto;
+}
+
+.curriculum-block h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.curriculum-block p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.curriculum-block a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.curriculum-block a:hover {
+  text-decoration: underline;
+}
