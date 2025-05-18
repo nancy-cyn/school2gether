@@ -1,0 +1,313 @@
+.container {
+    padding: 1rem;
+}
+
+.heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #2d3748; /* Slightly darker heading */
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    gap: 1rem;
+    
+}
+
+@media (min-width: 768px) {
+  .toolbar {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+
+.toolbarLeft {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.searchInput {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    width: 100%;
+    max-width: 250px;
+    font-size: 0.875rem;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.searchInput:focus {
+    outline: none;
+    border-color: #3b82f6;  /* Tailwind's blue-500 */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15); /* blue-500 with opacity */
+}
+
+
+.viewButton {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
+    display: flex; /* For centering the icon */
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem; /* Give it a fixed size */
+    height: 2.5rem;
+}
+
+.viewButton:hover {
+    background-color: #f7fafc; /* Lighter background on hover */
+    border-color: #cbd5e0;
+}
+
+.viewButton.activeView {
+    background-color: #eff6ff;
+    color: #3b82f6;
+    border-color: #3b82f6;
+}
+
+.exportButton {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.15s ease-in-out;
+    display: flex;
+    align-items: center;
+}
+
+.exportButton:hover {
+    background-color: #f7fafc;
+    border-color: #cbd5e0;
+}
+
+
+.addStudentButton {
+    padding: 0.75rem 1.5rem;
+    background-color: #3b82f6;
+    color: white;
+    border-radius: 0.375rem;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.addStudentButton:hover {
+    background-color: #2563eb;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.studentCard {
+    border: 1px solid hsl(214, 32%, 91%);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    background-color: #145da0;
+} 
+
+.studentCard:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cardHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.75rem;
+}
+
+.studentName {
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #1a202c;
+}
+
+.avatar {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #edf2f7;
+}
+
+.avatar img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.cardDescription {
+    font-size: 0.875rem;
+    color: #718096;
+    margin-bottom: 0.25rem;
+}
+
+.progressBadge {
+    background-color: #f0f4f8;
+    color: #00cfc8;
+    padding: 0.25rem 0.5rem;
+    border-radius: 1rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    font-palette: #00cfc8;
+}
+
+.cardContent {
+    font-size: 0.875rem;
+    color: white;
+}
+
+.nextSession {
+    margin-bottom: 0.75rem;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.messageButton,
+.profileButton {
+    padding: 0.5rem 1rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.15s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center; /* Center the text and icon */
+}
+
+.messageButton:hover,
+.profileButton:hover {
+    background-color: #f7fafc;
+    border-color: #cbd5e0;
+}
+
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+    overflow: hidden; /* To contain the rounded corners of thead and tbody */
+    
+}
+
+.thead {
+    background-color: #145da0;
+}
+
+.tableHead {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tableHeadRight{
+  text-align: right;
+}
+
+.tbody {
+    background-color:white;
+}
+
+
+.tableRow {
+    transition: background-color 0.15s ease-in-out;
+}
+
+.tableRow:hover {
+    background-color: white;
+}
+
+
+.tableCell {
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: white;
+    border-bottom: 1px solid white;
+}
+
+.tableCellRight{
+  text-align: right;
+}
+
+.actionsContainer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.5rem;
+}
+
+.iconButton {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.375rem;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+    display: flex; /* For centering the icon */
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem; /* Give it a fixed size */
+    height: 2.5rem;
+}
+
+.iconButton:hover {
+    background-color: #f7fafc;
+    border-color: #cbd5e0;
+}
+
+.sortButton{
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 0;
+}
+
+.sortButton:hover{
+  color: #3b82f6;
+}
