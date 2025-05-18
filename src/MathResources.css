@@ -1,0 +1,200 @@
+/* Main container */
+.math-resources-container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+  }
+  
+  /* Header styles */
+  .topic-container {
+    position: absolute;
+    top: 130px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .math-topic {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .grade-label {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Search bar styles */
+  .search-container {
+    position: absolute;
+    top: 130px;
+    right: 650px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .search-input {
+    padding: 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    width: 200px;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #61dafb;
+    box-shadow: 0 0 0 2px rgba(97, 218, 251, 0.2);
+  }
+  
+  .search-button {
+    background: #61dafb;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background: #4fa8d3;
+  }
+  
+  .search-icon {
+    font-size: 1rem;
+    color: white;
+  }
+  
+  /* Filter styles */
+  .filter-container {
+    position: absolute;
+    top: 130px;
+    right: 200px;
+    font-family: 'Arial', sans-serif;
+    z-index: 100;
+  }
+  
+  .filter-wrapper {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .filter-dropdown {
+    appearance: none;
+    padding: 8px 35px 8px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: white;
+    font-size: 0.9rem;
+    color: #333;
+    cursor: pointer;
+    outline: none;
+    width: 180px;
+    transition: all 0.3s ease;
+  }
+  
+  .filter-dropdown:hover {
+    border-color: #61dafb;
+  }
+  
+  .filter-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Resource card styles */
+  .resource-card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    background-color: #fff;
+  }
+  
+  .resource-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .resource-info-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 15px;
+    gap: 10px;
+  }
+  
+  .resource-left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+  }
+  
+  .resource-left-content h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .resource-left-content .resource-tutor-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .resource-left-content p {
+    margin: 0;
+    color: #666;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .resource-action-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .resource-action-buttons button {
+    background-color: #61dafb;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.85rem;
+    transition: background-color 0.2s;
+  }
+  
+  .resource-action-buttons button:hover {
+    background-color: #4fa8d3;
+  }
