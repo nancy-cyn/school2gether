@@ -5,17 +5,26 @@ import { faMicrophone } from '@fortawesome/free-solid-svg-icons/faMicrophone';
 import { faVideo } from '@fortawesome/free-solid-svg-icons';
 import { faGear } from '@fortawesome/free-solid-svg-icons';
 import { ImPhoneHangUp } from "react-icons/im";
+import studentimg from '../components/student.png';
+import Navbar from '../components/TeacherLMSNavbar.js';
+
 
 const CallPageComponent = () => {
     return (
-        <div className='Call_Page'>
+        <div>
+            <Navbar/>
+            <div className='Call_Page'>
             <div className='section1'>
                 <div id='Video_div' style={{  height: 0 }}>
                     <iframe width="900" height="450" src="https://www.youtube.com/embed/qGFoZ8yodc4?si=tXk-74cYNZKe_8_7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
                 <div id='Contacts_List'>
-                        <h2>Student Information</h2>
-                        <p>Khwezi Mpumela</p>
+                        <h2>Student Information</h2> 
+                        <div className='Student_Name'>
+                            <img src={studentimg}alt='student image'></img>
+                            <h3> Khwezi Mpumela</h3>
+                        </div>
+                        
                         <p>Grade 12</p>
                         <p>Subject: Accounting</p>
                         <p>Topic: Paper 1 Financial statements</p>
@@ -50,6 +59,8 @@ const CallPageComponent = () => {
             </div>
 
         </div>
+        </div>
+        
      );
 }
  

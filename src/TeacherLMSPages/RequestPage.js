@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import RequestCards from "../components/RequestCards";
+import RequestCards from "../components/RequestCards.js";
 import profilePic from '../components/student.png';
 import { Link } from 'react-router-dom';
 import './Requests.css'; 
@@ -9,6 +9,7 @@ import { GiCheckMark } from "react-icons/gi";
 import { LuCalendar } from "react-icons/lu";
 import { BiRefresh } from 'react-icons/bi';
 import { FiSearch, FiFilter, FiDownload } from "react-icons/fi";
+import Navbar from '../components/TeacherLMSNavbar.js';
 
 const RequestPage = () => {
     const [pendingRequestCount, setPendingRequestCount] = useState(10);
@@ -135,60 +136,63 @@ const RequestPage = () => {
     
 
     return (
-        <div className="requestpage">
-            <div className="top-section">
-                <h1>Student Requests</h1>
-                <div className="request-summary" >
-                    
-                <div className="request-status">
-                    <div className="pending-request">
-                        <BsHourglassSplit />
-                        <span>Pending Request <br /><span className="number">{pendingRequestCount}</span></span>
+        <div>
+            <Navbar/>
+            <div className="requestpage">
+                <div className="top-section">
+                    <h1>Student Requests</h1>
+                    <div className="request-summary" >
+                        
+                    <div className="request-status">
+                        <div className="pending-request">
+                            <BsHourglassSplit />
+                            <span>Pending Request <br /><span className="number">{pendingRequestCount}</span></span>
+                        </div>
+                        <div className="rejected-request">
+                            <MdBlock />
+                            <span>Rejected Requests <br /><span className="number">{rejectedRequestCount}</span></span>
+                        </div>
+                        <div className="accepted-requests">
+                            <GiCheckMark />
+                            <span>Accepted Request <br /><span className="number">{acceptedRequestCount}</span></span> {/* Assuming count is 5 in the image */}
+                        </div>
                     </div>
-                    <div className="rejected-request">
-                        <MdBlock />
-                        <span>Rejected Requests <br /><span className="number">{rejectedRequestCount}</span></span>
                     </div>
-                    <div className="accepted-requests">
-                        <GiCheckMark />
-                        <span>Accepted Request <br /><span className="number">{acceptedRequestCount}</span></span> {/* Assuming count is 5 in the image */}
+                    <div className="quick-action">
+                        <h2>Quick Action</h2>
+                        <Link to="/schedule" className="btn-schedule-link">
+                        <button className='btn-schedule'>
+                            <LuCalendar /> View Schedule
+                        </button>
+                        </Link>
+                        
+                        <button className="btn-availability">
+                            <BiRefresh /> Update Availability
+                        </button>
                     </div>
                 </div>
+                <div className="actions">
+                    <div className="search-container">
+                        <input type="text" placeholder="Search" className="ac-search-input" />
+                        <button className="search-button">
+                        <FiSearch />
+                        </button>
+                    </div>
+                    <div className="filter-export">
+                        <button className="filter-button">
+                        <FiFilter /> Filter
+                        </button>
+                        <button className="export-button">
+                        <FiDownload /> Export
+                        </button>
+                    </div>
                 </div>
-                <div className="quick-action">
-                    <h2>Quick Action</h2>
-                    <Link to="/schedule" className="btn-schedule-link">
-                    <button className='btn-schedule'>
-                        <LuCalendar /> View Schedule
-                    </button>
-                    </Link>
-                    
-                    <button className="btn-availability">
-                        <BiRefresh /> Update Availability
-                    </button>
-                </div>
+                <RequestCards
+                    requests={requests}
+                    onAccept={handleAccept}
+                    onDecline={handleDecline}
+                />
             </div>
-            <div className="actions">
-                <div className="search-container">
-                    <input type="text" placeholder="Search" className="ac-search-input" />
-                    <button className="search-button">
-                    <FiSearch />
-                    </button>
-                </div>
-                <div className="filter-export">
-                    <button className="filter-button">
-                    <FiFilter /> Filter
-                    </button>
-                    <button className="export-button">
-                    <FiDownload /> Export
-                    </button>
-                </div>
-            </div>
-            <RequestCards
-                requests={requests}
-                onAccept={handleAccept}
-                onDecline={handleDecline}
-            />
         </div>
     );
 }

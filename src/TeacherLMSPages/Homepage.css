@@ -1,0 +1,174 @@
+/* HomePage.css */
+
+.home-page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Added a more modern font */
+}
+
+.home-header {
+    text-align: center;
+    padding: 60px 20px; /* Adjusted padding */
+    background-color: #145da0;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: relative; /* For logo positioning */
+}
+
+.home-header .home-logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 50px; /* Adjust logo size */
+}
+
+.home-header h1 {
+    font-size: 2.75em; /* Slightly larger */
+    margin-bottom: 15px; /* Adjusted margin */
+    padding-top: 40px; /* Adjust to accommodate logo */
+}
+
+.home-header p {
+    font-size: 1.2em; /* Slightly larger */
+    margin-bottom: 40px; /* Adjusted margin */
+    line-height: 1.6; /* Improved readability */
+}
+
+.get-started-button {
+    padding: 15px 30px; /* Slightly larger button */
+    font-size: 1.3em; /* Slightly larger text */
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease; /* Added transform */
+}
+
+.get-started-button:hover {
+    background-color: #00cfc8;
+    color: white;
+    transform: scale(1.05); /* Slight scale on hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Added shadow on hover */
+}
+
+.home-main {
+    flex-grow: 1;
+    padding: 50px 20px; /* Adjusted padding */
+    text-align: center;
+}
+
+.features-section,
+.testimonials-section {
+    margin-bottom: 70px; /* Adjusted margin */
+}
+
+.features-section h2,
+.testimonials-section h2 {
+    font-size: 2.2em; /* Slightly larger */
+    margin-bottom: 35px; /* Adjusted margin */
+    color: #145da0; /* Consistent with header */
+    border-bottom: 2px solid #145da0; /* Added a subtle underline */
+    padding-bottom: 10px;
+}
+
+.feature-cards,
+.testimonial-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px; /* Adjusted gap */
+    margin-top: 25px; /* Adjusted margin */
+}
+
+.feature-card,
+.testimonial-card {
+    background-color: white;
+    padding: 35px; /* Adjusted padding */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    width: 320px; /* Slightly wider */
+    text-align: center;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Added transitions */
+}
+
+.feature-card:hover,
+.testimonial-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+.feature-card h3 {
+    font-size: 1.6em; /* Slightly larger */
+    margin-bottom: 20px; /* Adjusted margin */
+    color: #145da0; /* Consistent color */
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 20px; /* Adjusted margin */
+    line-height: 1.7; /* Improved readability */
+    color: #555;
+}
+
+.testimonial-card .author {
+    font-weight: bold;
+    text-align: right;
+    color: #444;
+}
+
+.home-footer {
+    text-align: center;
+    padding: 25px; /* Adjusted padding */
+    background-color: #333;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 1em; /* Adjusted font size */
+}
+.value-proposition-section h2 {
+    font-size: 2.2em;
+    color: #145da0;
+    margin-bottom: 35px;
+    text-align: center;
+    border-bottom: 2px solid #145da0;
+    padding-bottom: 10px;
+}
+
+.value-proposition-grid {
+    display: flex; /* Change to flexbox */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 30px; /* Space between the cards */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+}
+
+.value-proposition {
+    background-color: #f9f9f9;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjust width as needed */
+    text-align: left; /* Align text within each card to the left */
+}
+
+.value-proposition h3 {
+    font-size: 1.6em;
+    color: #145da0;
+    margin-bottom: 15px;
+}
+
+.value-proposition ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Add left padding for the bullet points */
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 20px; /* Add some space below the list */
+}
+
+.value-proposition li {
+    margin-bottom: 5px;
+}

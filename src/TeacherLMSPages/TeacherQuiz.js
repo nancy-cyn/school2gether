@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import { FaEdit, FaTrash, FaUpload, FaFile, FaTasks, FaDatabase} from "react-icons/fa";
 import './TeacherQuiz.css';
+import Navbar from '../components/TeacherLMSNavbar.js';
 
 const CreateQuiz = () =>{
     const [quizTitle, setQuizTitle] = useState('');
@@ -91,6 +92,8 @@ const CreateQuiz = () =>{
         setEditPoints(1);
     };
     return(
+      <div>
+        <Navbar/>
         <div className="app-container">
 
       {showSavedPopup && (
@@ -302,7 +305,8 @@ const CreateQuiz = () =>{
           </div>
         </div>
       </div>
-    </div>
+        </div>
+      </div>
     );
 };
 

@@ -23,7 +23,7 @@
   
   .card-banner {
     background-color: #f4c988;
-    color: #ff914d; 
+    color: white; 
     padding: 8px 12px;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
@@ -99,5 +99,5 @@
   }
   .btn-accept{
     background: #04F39C;
-background: linear-gradient(0deg, rgba(4, 243, 156, 1) 0%, rgba(141, 183, 205, 1) 13%, rgba(193, 160, 224, 1) 70%, rgba(200, 109, 215, 1) 91%);
+    background: linear-gradient(0deg, rgba(4, 243, 156, 1) 0%, rgba(141, 183, 205, 1) 13%, rgba(193, 160, 224, 1) 70%, rgba(200, 109, 215, 1) 91%);
   }

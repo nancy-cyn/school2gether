@@ -1,13 +1,34 @@
 import logo from './logo.png';
 import profilePic from './dp.jpg';
-import { LuLayoutDashboard, LuUsers, LuBell, LuCalendar, LuMessageSquare } from "react-icons/lu";
+import { LuLayoutDashboard, LuUsers, LuBell, LuCalendar, LuMessageSquare,LuLogOut, LuSettings } from "react-icons/lu";
 import { FaBell } from "react-icons/fa";
-import './Navbar.css';
+import './TeacherLMSNavbar.css';
 import { NavLink } from 'react-router-dom';
 import { MdOutlineQuiz } from "react-icons/md";
+import React, { useState, useRef, useEffect } from 'react';
+import { RiUserCommunityLine } from "react-icons/ri";
 
 const Navbar = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+const dropdownRef = useRef(null);
 
+const toggleDropdown = () => {
+    setIsDropdownOpen(prev => !prev);
+};
+
+// Close dropdown when clicking outside
+useEffect(() => {
+    const handleClickOutside = (event) => { // Change to event
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) { // Change to event.target
+             setIsDropdownOpen(false);
+}
+};
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+    };
+}, []);
     
     return ( 
         <nav className="navbar">
@@ -51,23 +72,43 @@ const Navbar = () => {
               <MdOutlineQuiz />
               Create Quiz
             </NavLink>
+          <NavLink to="/Networki" className="nav-link" activeClassName="active">
+                      <RiUserCommunityLine />
+                      Networking
+          </NavLink>
           </div>
         </div>
       </div>
       
       <div className="right-section">
+        
         <div className="notification-icon">
           <FaBell />
         </div>
-        <div className="profile-info">
-          <div className="profile-image">
-            <img src={profilePic} alt="Profile" /> 
+        
+
+        <div className="profile-info" ref={dropdownRef}>
+          <div className="profile-image" onClick={toggleDropdown} style={{ cursor: 'pointer' }}>
+              <img src={profilePic} alt="Profile" />
           </div>
+          {isDropdownOpen && (
+              <div className="dropdown">
+                  <NavLink to="/profile/settings" className="dropdown-item">
+                      <LuSettings />
+                      Profile Settings
+                  </NavLink>
+                  <NavLink to="/" className="dropdown-item">
+                      <LuLogOut />
+                      Logout
+                  </NavLink>
+                  
+              </div>
+          )}
           <div className="profile-text">
-            <span>Sarah Sarah</span>
-            <span className="role">Math Teacher</span>
+              <span>Sarah Sarah</span>
+              <span className="role">Math Teacher</span>
           </div>
-        </div>
+      </div>
       </div>
         </nav>
      );

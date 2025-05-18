@@ -169,8 +169,8 @@
 }
 
 .cardDescription {
-    font-size: 0.875rem;
-    color: #718096;
+    font-size: 1rem;
+    color: white;
     margin-bottom: 0.25rem;
 }
 
@@ -179,7 +179,7 @@
     color: #00cfc8;
     padding: 0.25rem 0.5rem;
     border-radius: 1rem;
-    font-size: 0.75rem;
+    font-size: 1rem;
     font-weight: 500;
     font-palette: #00cfc8;
 }
@@ -198,27 +198,28 @@
     gap: 0.5rem;
     margin-top: 1rem;
 }
-
+.messageButton{
+    background: #04F39C;
+    background: linear-gradient(0deg, rgba(4, 243, 156, 1) 0%, rgba(141, 183, 205, 1) 13%, rgba(193, 160, 224, 1) 70%, rgba(200, 109, 215, 1) 91%);
+    color: white;
+}
 .messageButton,
 .profileButton {
     padding: 0.5rem 1rem;
-    border: 1px solid #e2e8f0;
-    border-radius: 0.375rem;
-    background-color: transparent;
+    border-radius: 15px;
     cursor: pointer;
     font-size: 0.875rem;
-    transition: background-color 0.15s ease-in-out;
     display: flex;
     align-items: center;
     flex: 1;
-    justify-content: center; /* Center the text and icon */
-    color:white;
+    justify-content: center; 
 }
 
 .messageButton:hover,
 .profileButton:hover {
     background-color: #f7fafc;
     border-color: #cbd5e0;
+    color:black;
 }
 
 
@@ -315,3 +316,4 @@
 .sortButton:hover{
   color: #3b82f6;
 }
+

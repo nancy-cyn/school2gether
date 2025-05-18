@@ -1,8 +1,9 @@
-import '../components/Messages.css';
+import './Messages.css';
 import React, { useState, useRef, useEffect } from 'react';
 import { FiSend, FiSmile, FiPaperclip } from 'react-icons/fi';
 import pic from '../components/student.png';
 import teacherprofile from '../components/dp.jpg';
+import Navbar from '../components/TeacherLMSNavbar.js';
 
 const MessagesPage = () => {
     const [selectedUser, setSelectedUser] = useState(null); // Start with null
@@ -13,34 +14,37 @@ const MessagesPage = () => {
     ];
 
     return (
-        <div className="messages-page">
-            <div className="user-list-sidebar">
-                <input
-                    type="text"
-                    placeholder="Search students..."
-                    className="search-input"
-                />
-                <div className="user-list">
-                    {mockUserList.map((user) => {
-                        const isSelected = selectedUser === user.id;
-                        return (
-                            <div
-                                key={user.id}
-                                className={`user-item ${isSelected ? 'selected' : ''}`}
-                                onClick={() => setSelectedUser(user.id)}
-                            >
-                                <img src={user.avatar} alt={user.name} className="avatar" />
-                                <div className="user-info">
-                                    <div className="user-name">{user.name}</div>
-                                    <div className="user-subject">{user.subject}</div>
+        <div>
+            <Navbar/>
+            <div className="messages-page">
+                <div className="user-list-sidebar">
+                    <input
+                        type="text"
+                        placeholder="Search students..."
+                        className="search-input"
+                    />
+                    <div className="user-list">
+                        {mockUserList.map((user) => {
+                            const isSelected = selectedUser === user.id;
+                            return (
+                                <div
+                                    key={user.id}
+                                    className={`user-item ${isSelected ? 'selected' : ''}`}
+                                    onClick={() => setSelectedUser(user.id)}
+                                >
+                                    <img src={user.avatar} alt={user.name} className="avatar" />
+                                    <div className="user-info">
+                                        <div className="user-name">{user.name}</div>
+                                        <div className="user-subject">{user.subject}</div>
+                                    </div>
                                 </div>
-                            </div>
-                        );
-                    })}
+                            );
+                        })}
+                    </div>
                 </div>
+            
+                <ConversationArea selectedUser={selectedUser} mockUserList={mockUserList} />
             </div>
-           
-            <ConversationArea selectedUser={selectedUser} mockUserList={mockUserList} />
         </div>
     );
 };

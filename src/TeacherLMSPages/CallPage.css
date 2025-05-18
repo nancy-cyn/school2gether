@@ -5,7 +5,6 @@
     padding: 20px;
     gap: 20px;
 }
-
 #Contacts_List{
     margin-top: 19px;
     border: 1px solid black;
@@ -14,7 +13,19 @@
     padding: 30px;
     max-width: 250px;
     font-size: 15px;
-    background-color: white;
+    background-color: #145da0;
+    color: white;
+    
+}
+#Contacts_List img{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    padding-left: 0px;
+    padding-right: 5px;
+}
+.Student_Name{
+    display: flex;
 }
 #Video_div{
     margin-left: 10px;
@@ -27,8 +38,17 @@
     padding: 30px;
     max-width: 250px;
     font-size: 15px;
-    background-color: white;
+    color: white;
+    background-color: #145da0;
 }
+#Resources a{
+    color: #00cfc8;
+}
+
+#Resources a:hover{
+    color: white;
+}
+
 .section1{
     display: flex;
     flex-direction: row;
