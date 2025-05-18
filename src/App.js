@@ -5,6 +5,8 @@ import Quizzes from './components/quizes';
 import QuizInstructions from './components/instructions';
 import ActualQuiz from './components/actual_quiz';
 import Timetable from './components/timetable';
+import Messages from './components/messages.js';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -20,7 +22,8 @@ function App() {
       <Route path="/callpage" element={<CallPage />} />
       <Route path="/tutors" element={<MyStudents/>}/>
       <Route path="/dashboard" element={<StudentDashboard/>}/> 
- 
+       <Route path="/messages" element={<Messages/>}/> 
+
       </Routes>
     </Router>
   );

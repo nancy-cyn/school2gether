@@ -1,150 +1,231 @@
-.BashboardContent{
-    display: grid; 
-    grid-template-rows: auto;
-    grid-template-columns: repeat(4,1fr); 
-    gap: 1em;
-    padding: 20px;
-}
-.card_Active_Students{
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(4, 4, 78);
-    padding: 30px;
-    margin: 30px;
-    max-width: 250px;
-    display: inline-block;
-    font-size: 20px;
-}
-.card_Sessions{
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(4, 4, 78);
-    padding: 30px;
-    margin: 30px;
-    max-width: 250px;
-    display: inline-block;
-    font-size: 20px;
-}
-.card_New_Request{
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(4, 4, 78);
-    padding: 30px;
-    margin: 30px;
-    max-width: 250px;
-    display: inline-block;
-    font-size: 20px;
-}
-.card_This_month{
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(4, 4, 78);
-    padding: 30px;
-    margin: 30px;
-    max-width: 250px;
-    display: inline-block;
-    font-size: 20px;
-}
-.card_Recent_Activities{
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(4, 4, 78);
-    padding: 30px;
-    padding-left: 8px;
-}
-#first_row{
-    font-size: 14px;
-    text-align: end;
+/* Dashboard.css */
+.dashboard {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f8fa;
+  min-height: 100vh;
 }
 
-.Recent_Activities{
-    font-size: 25px;
-    margin-bottom: 7px;
-} 
-.TutRequests{
-    font-size: 25px;
-    margin-bottom: 7px;
+.dashboard-content {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
 }
-.students_availablep{
-    background-color: rgb(4, 4, 78);
-    color: white;
-    padding: 10px;
-    margin-bottom: 5px;
+
+.left-column, .middle-column, .right-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-.new_requests{
-    background-color: rgb(4, 4, 78);
-    color: white;
-    padding: 10px;
+
+.left-column {
+  width: 25%;
 }
-#paragraphRequest{
-    background-color: rgb(4, 4, 78);
-    color: white;
-    padding: 15px;
-    margin-bottom: 5px;
-    margin-top: 5px;
+
+.middle-column {
+  width: 35%;
 }
-.TutoringRequest{
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(4, 4, 78);
-    padding: 30px;
-    padding-left: 8px;
+
+.right-column {
+  width: 40%;
 }
-.accept_btn{
-    margin-top: 2px;
-    border: 1px dolid rgb(70, 70, 173);
-    border-radius: 15px;
-    padding: 3px;
-    background-color: white;
-    color: black;
-    gap: 2em;
-    font-size: 12px;
+
+/* Card Styles */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
 }
-.decline_btn{
-    border: 1px dolid rgb(70, 70, 173);
-    border-radius: 15px;
-    padding: 3px;
-    margin-left: 6px;
-    background-color: white;
-    color: black;
-    font-size: 12px;
+
+.card-title {
+  color: white;
+  margin: 0 0 15px 0;
+  font-size: 18px;
 }
-.time{
-    font-size: 8px;
+
+.sessions-card, 
+.progress-overview-card,
+.tasks-card, 
+.study-time-card, 
+.resources-card,
+.progress-card, 
+.grade-card, 
+.assignments-card, 
+.activities-card {
+  background-color: #0e5b8a;
 }
-#Sessions{
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(4, 4, 78);
-    padding: 30px;
-    padding-left: 8px;
+
+/* Sessions Section */
+.session-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-.todaysSession{
-    font-size: 25px;
-    margin-bottom: 7px;
+
+.session-item {
+  background-color: #0fcece;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
 }
-.Session_p{
-    margin-top: 5px;
-    background-color: rgb(4, 4, 78);
-    color: white;
-    padding: 10px;
-    margin-bottom: 5px;
+
+.session-time {
+  font-weight: bold;
 }
-#Performance{
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgb(4, 4, 78);
-    padding: 30px;
-    padding-left: 8px;
+
+/* Progress Overview Section */
+.progress-circles {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  text-align: center;
 }
-#h2performance{
-    font-size: 25px;
-    margin-bottom: 7px;
+
+.progress-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#0fcece 0% 75%, #112233 75% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
-#studentRate{
-    margin-top: 5px;
-    background-color: rgb(4, 4, 78);
-    color: white;
-    padding: 10px;
-    margin-bottom: 5px;
+
+.progress-circle-inner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #0e5b8a;
+}
+
+.progress-label {
+  margin-top: 5px;
+  color: white;
+  font-size: 14px;
+}
+
+/* Tasks, Progress, Grade Cards */
+.tasks-card, 
+.progress-card, 
+.grade-card {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  height: 80px;
+}
+
+.tasks-icon, 
+.progress-icon, 
+.grade-icon {
+  font-size: 24px;
+  margin-right: 15px;
+}
+
+.tasks-count, 
+.progress-percentage, 
+.grade-percentage {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+.tasks-title,
+.progress-title,
+.grade-title {
+  color: white;
+  margin-bottom: 5px;
+}
+
+/* Study Time Chart */
+.study-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 150px;
+}
+
+.chart-bar {
+  width: 15%;
+  background-color: #0fcece;
+  border-radius: 3px;
+}
+
+.chart-bar:nth-child(1) {
+  height: 60px;
+}
+
+.chart-bar:nth-child(2) {
+  height: 120px;
+}
+
+.chart-bar:nth-child(3) {
+  height: 80px;
+}
+
+.chart-bar:nth-child(4) {
+  height: 60px;
+}
+
+.chart-bar:nth-child(5) {
+  height: 80px;
+}
+
+/* Learning Resources */
+.resources-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.resource-item {
+  background-color: #0fcece;
+  border-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+.resource-icon {
+  font-size: 24px;
+}
+
+/* Assignments */
+.assignments-list, 
+.activities-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.assignment-item {
+  background-color: #0fcece;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+}
+
+.status-dot {
+  width: 12px;
+  height: 12px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+/* Recent Activities */
+.activity-item {
+  background-color: #0fcece;
+  border-radius: 5px;
+  padding: 10px;
+  color: black;
+}
+
+.activity-time {
+  font-size: 12px;
+  color: #333;
 }

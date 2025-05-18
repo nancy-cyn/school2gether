@@ -6,12 +6,12 @@ import Navbar from './navbar';
 
 // Placeholder data for students (replace with actual data fetching)
 const initialStudents = [
-    { id: '1', name: 'Christopher Skinner', progress: 44, nextSession: 'Today, 2:00 PM', avatar: '/path/to/avatar1.jpg' },
-    { id: '2', name: 'Christopher Skinner', progress: 44, nextSession: 'Today, 2:00 PM', avatar: '/path/to/avatar2.jpg' },
-    { id: '3', name: 'Christopher Skinner', progress: 44, nextSession: 'Today, 2:00 PM', avatar: '/path/to/avatar3.jpg' },
-    { id: '4', name: 'Sarah Williams', progress: 75, nextSession: 'Tomorrow, 10:00 AM', avatar: '/path/to/avatar4.jpg' },
-    { id: '5', name: 'David Lee', progress: 20, nextSession: 'Next Week, 3:00 PM', avatar: '/path/to/avatar5.jpg' },
-    { id: '6', name: 'Jessica Brown', progress: 90, nextSession: 'Today, 1:00 PM', avatar: '/path/to/avatar6.jpg' },
+    { id: '1', name: 'Christopher Skinner', progress: 44, nextSession: 'Today, 2:00 PM', avatar: '/images/IMG_CHRIS.jpg' },
+    { id: '2', name: 'Nancy Kabobo', progress: 44, nextSession: 'Today, 2:00 PM', avatar: '/images/img_khwezi.jpg' },
+    { id: '3', name: 'Ikaneng Mmako', progress: 44, nextSession: 'Today, 2:00 PM', avatar: '/images/img_destiny.jpg' },
+    { id: '4', name: 'Sarah Williams', progress: 75, nextSession: 'Tomorrow, 10:00 AM', avatar: '/images/img_destiny.jpg' },
+    { id: '5', name: 'David Lee', progress: 20, nextSession: 'Next Week, 3:00 PM', avatar: '/images/img_ntuthuko.jpg' },
+    { id: '6', name: 'Jessica Brown', progress: 90, nextSession: 'Today, 1:00 PM', avatar: '/images/img_khwezi.jpg' },
 ];
 
 
@@ -63,9 +63,10 @@ const MyStudents = () => {
     );
 
     return (
-        
+        <>
+        <Navbar />
+
         <div className={styles.container}>
-                  <Navbar />
 
             <h1 className={styles.heading}>My Students</h1>
 
@@ -166,6 +167,7 @@ const MyStudents = () => {
                 </table>
             )}
         </div>
+        </>
     );
 };
 
