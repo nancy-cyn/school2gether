@@ -1,12 +1,24 @@
-// src/App.js
-import React from 'react';
-import './App.css'; // Keep this if App.css has global styles, otherwise you might not need it.
-import Home from './Home'; // Import the Home component
+import './App.css';
+import LoginPage from './Pages/LoginPage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import SignInPage from './Pages/CreateAccount';
+import ForgotPassword from './Pages/ForgotPassword';
+import Home from './Pages/Home';
+
 
 function App() {
   return (
-    <Home /> /* Render the Home component */
-  )
+    <div className="App">
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path="signIn" element={<SignInPage/>}/>
+          <Route path='Login' element={<LoginPage/>}/>
+          <Route path='ResetPassword' element={<ForgotPassword/>}/>
+        </Routes>
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;

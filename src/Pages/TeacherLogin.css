@@ -1,0 +1,65 @@
+body{
+    background-color: rgb(233, 225, 225);
+}
+
+.loginPage{
+    text-align: center;
+    margin-top: 60px;
+    color: black;
+    border: 1px solid black;
+    height: 100%;
+    margin-left: 520px;
+    margin-right: 520px;
+    border-radius: 20px;
+}
+
+#Input-Surname, #Input-Password, #Input-Email, #Input-Sace{
+    background: none;
+    border-top:none ;
+    border-right:none;
+    border-bottom: 1px solid black;
+    border-left: none;
+    height: 50px;
+    width: 316px;
+    margin-top: 10px;
+}
+#Input-Surname:hover,#Input-Password:hover, #Input-Email:hover, #Input-Sace:hover{
+    cursor: pointer;
+}
+#ForgotPassword{
+    text-decoration: none;
+    color: black;
+}
+#ForgotPassword:hover{
+    color: orangered;
+    cursor: pointer;
+}
+#password-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    margin-top: 14px;
+    margin-left: 75px;
+    margin-right: 80px;
+}
+#Login-btn{
+    margin-top: 14px;
+    padding: 10px;
+    padding-left: 140px;
+    padding-right: 150px;
+    border: 1px solid grey;
+    border-radius: 18px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+#Register{
+    text-decoration: none;
+    color: black;
+}
+#Register:hover{
+    color: orangered;
+    cursor: pointer;
+
+}

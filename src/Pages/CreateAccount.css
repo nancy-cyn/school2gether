@@ -1,0 +1,38 @@
+body{
+    background-color: #4A7C88;
+}
+
+.loginPage{
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    border: 1px solid white;
+    margin-left: 520px;
+    margin-right: 520px;
+    border-radius: 20px;
+}
+
+#Input-Surname, #Input-Password, #Input-Email{
+    background: none;
+    border-top:none ;
+    border-right:none;
+    border-bottom: 1px solid white;
+    border-left: none;
+    height: 50px;
+    width: 316px;
+    margin-top: 10px;
+    color: white;
+}
+
+#SignUp-btn{
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 140px;
+    padding-right: 150px;
+    border: 1px solid white;
+    border-radius: 18px;
+    margin-bottom: 15px;
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
