@@ -55,6 +55,7 @@ function Teacher() {
             display: 'flex',
             flexDirection: 'column',
             gap: '8.33px',
+            
           }}>
             <button style={{
               display: 'flex',
@@ -69,6 +70,7 @@ function Teacher() {
               border: 'none',
               gap: '2.5px',
               margin: '0 auto', // Horizontal centering
+              cursor:'pointer'
             }}>
               <span style={{
                 fontFamily: 'Inter, system-ui, sans-serif',
@@ -137,6 +139,7 @@ function Teacher() {
               border: 'none',
               gap: '2.5px',
               margin: '0 auto',
+              cursor:'pointer'
             }}>
               <span style={{
                 fontFamily: 'Inter, system-ui, sans-serif',
@@ -203,6 +206,7 @@ function Teacher() {
             border: 'none',
             gap: '2.5px',
             margin: '0 auto', // Horizontal centering
+            cursor:'pointer'
           }}>
             <span style={{
               fontFamily: 'Inter, system-ui, sans-serif',
