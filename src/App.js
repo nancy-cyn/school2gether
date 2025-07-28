@@ -1,22 +1,11 @@
-import './App.css';
-import LoginPage from './Pages/LoginPage';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import SignInPage from './Pages/CreateAccount';
-import ForgotPassword from './Pages/ForgotPassword';
-import Home from './Pages/Home';
-
+import React from 'react';
+import StudentDirectory from './studirectory'; // ✅ correct
+import './App.css'; // optional if you want styles here too
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path='/' element={<Home/>}/>
-          <Route path="signIn" element={<SignInPage/>}/>
-          <Route path='Login' element={<LoginPage/>}/>
-          <Route path='ResetPassword' element={<ForgotPassword/>}/>
-        </Routes>
-      </BrowserRouter>
+    <div>
+      <StudentDirectory />
     </div>
   );
 }
