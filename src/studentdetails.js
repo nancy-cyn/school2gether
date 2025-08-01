@@ -1,8 +1,7 @@
 // studentdetails.js
 import React, { useState, useEffect } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBell, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import { Sidebar } from './sidebar'; // Import the Sidebar component
+import { Navbar } from './Navbar'; // Import the Navbar component
 import './studentdetail.css';
 
 /**
@@ -49,31 +48,8 @@ export function StudentDetails() {
 
   return (
     <div className="app-container">
-      {/* Navigation Bar */}
-      <div className="navbar">
-        {/* Hamburger menu for mobile */}
-        {!isDesktopView && (
-          <div className="hamburger-menu" onClick={toggleSidebar}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-          </div>
-        )}
-        
-        {/* Logo */}
-        <img
-          src="/images/logo.png"
-          alt="Logo"
-          className="navbar-logo"
-        />
-        
-        {/* Navigation icons */}
-        <div className="navbar-icons">
-          <FontAwesomeIcon icon={faBell} className="navbar-icon" />
-          <FontAwesomeIcon icon={faEnvelope} className="navbar-icon" />
-          <FontAwesomeIcon icon={faPhone} className="navbar-icon" />
-        </div>
-      </div>
+      {/* Navigation Bar Component */}
+      <Navbar isDesktopView={isDesktopView} toggleSidebar={toggleSidebar} />
 
       {/* Main Content Layout */}
       <div className="content-layout">

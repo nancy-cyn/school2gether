@@ -1,11 +1,11 @@
+// src/App.js
 import React from 'react';
-import StudentDirectory from './studirectory'; 
-import './App.css'; 
+import { StudentDetails } from './studentdetails';
 
 function App() {
   return (
-    <div>
-      <StudentDirectory />
+    <div className="App">
+      <StudentDetails />
     </div>
   );
 }

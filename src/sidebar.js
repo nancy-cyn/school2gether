@@ -2,7 +2,8 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faChartLine, faCalendarDays, faVideo, faMessage, faBell, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import './studentdetail.css';
+
+import './Sidebar.css';
 
 /**
  * Sidebar Component - Displays the navigation menu
