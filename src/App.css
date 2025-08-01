@@ -164,7 +164,7 @@ body {
     flex-grow: 1; /* Make it take all available space within sidebar */
     justify-content: space-between; /* Push tutor profile to bottom within this wrapper */
     /* This padding creates space for the absolutely positioned sidebar-header on mobile */
-    padding-top: 62px; 
+    padding-top: 62px;
 }
 
 
