@@ -1,0 +1,155 @@
+body, html, .container {
+    background: #fff;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.header {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.support-btn {
+    background-color: white;
+    color: #0072ff;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.main {
+    display: flex;
+    padding: 2rem;
+}
+
+.schedule-section {
+    flex: 3;
+    padding-right: 2rem;
+}
+
+.schedule-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.schedule-grid {
+    display: flex;
+    position: relative;
+}
+
+.time-column {
+    width: 60px;
+    margin-top: 1.5rem;
+}
+
+.time-slot {
+    height: 60px;
+    font-size: 0.9rem;
+    color: #888;
+    text-align: right;
+    padding-right: 0.5rem;
+    line-height: 60px;
+    border-top: 1px solid #eee;
+}
+
+.day-columns {
+    display: flex;
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.day-column {
+    flex: 1;
+    border-left: 1px solid #eee;
+    position: relative;
+    height: 700px;
+}
+
+.day-label {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    padding-top: 0.5rem;
+}
+
+.event {
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    height: 80px;
+    border-radius: 10px;
+    color: white;
+    padding: 0.5rem;
+    font-size: 0.85rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.event-math {
+    background-color: #4b6cb7;
+    top: 120px; /* 10AM */
+}
+
+.event-physics {
+    background-color: #a259ff;
+    top: 480px; /* 4PM */
+}
+
+.live-classes {
+    flex: 1.2;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    height: fit-content;
+}
+
+.live-class {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info p {
+    margin: 0.3rem 0;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.status.started {
+    color: green;
+    font-weight: 500;
+}
+
+.status.upcoming {
+    color: gray;
+}
+
+.join-btn {
+    background-color: #005eff;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.join-btn.disabled {
+    background-color: #e0e0e0;
+    color: #888;
+    cursor: not-allowed;
+}
