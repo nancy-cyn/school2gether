@@ -1,12 +1,11 @@
-// src/App.js
 import React from 'react';
-import { StudentDetails } from './studentdetails';
+// Adjust the path if Teacher.js is in a different directory
+
+import Student from './student';
 
 function App() {
   return (
-    <div className="App">
-      <StudentDetails />
-    </div>
+    <Student />
   );
 }
 
