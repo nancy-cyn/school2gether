@@ -1,6 +1,6 @@
 import React from 'react';
-import StudentDirectory from './Pages/studirectory'; // ✅ correct
-import './App.css'; // optional if you want styles here too
+import StudentDirectory from './Pages/studirectory';
+import './App.css';
 import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
 import Dashboard from "./Pages/Dashboard";
 import SchedulePage from "./Pages/Schedule";
@@ -18,14 +18,12 @@ function App() {
         {/* <AnalyticsSummary/> */}
       {/*<CheckoutForm/>*/}
         <BrowserRouter>
-
             <Routes>
                 <Route path="/Checkout" element={<CheckoutForm />} />
                 <Route path="/BillingStation" element={<InvoicesPage />} />
                 <Route path="/SessionUsage" element={<SessionUsage />} />
             </Routes>
         </BrowserRouter>
-
     </div>
   );
 }

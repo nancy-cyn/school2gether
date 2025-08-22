@@ -1,0 +1,449 @@
+/* studentdetails.css */
+
+/* ======================
+   BASE STYLES & RESETS
+   ====================== */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: system-ui, -apple-system, sans-serif;
+  }
+  
+  /* ======================
+     MAIN LAYOUT STRUCTURE
+     ====================== */
+  .app-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content-layout {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    width: 100%;
+  }
+  
+  .main-area {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+  
+  .main-content {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    flex-grow: 1;
+  }
+  
+  /* ======================
+     STUDENT PROFILE CARD
+     ====================== */
+  .data-rectangle {
+    width: 100%;
+    max-width: 999px;
+    min-height: 200px;
+    background: #FFFFFF;
+    border: 1px solid #F1F2F5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px 15px 15px 80px;
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .student-avatar {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    background-color: #F1F2F5;
+  }
+  
+  .student-name {
+    position: absolute;
+    top: 25px;
+    left: 200px;
+  }
+  
+  .student-name h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: #4a4a4a;
+  }
+  
+  .student-name p {
+    font-size: 14px;
+    color: #6b7280;
+  }
+  
+  /* Student Action Buttons */
+  .student-actions {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+  
+  .btn {
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.2s ease;
+    width: 120px;
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background-color: #0078A6;
+    color: white;
+  }
+  
+  .btn-primary:hover {
+    background-color: #005f85;
+  }
+  
+  .btn-secondary {
+    background-color: #0078A6;
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #005f85;
+  }
+  
+  /* Progress Section */
+  .progress-container {
+    position: absolute;
+    top: 105px;
+    left: 200px;
+    width: 580px;
+  }
+  
+  .progress-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+  
+  .sessions-remaining {
+    font-size: 13px;
+    color: #6b7280;
+  }
+  
+  .progress-bar {
+    height: 13px;
+    width: 100%;
+    background-color: #F1F2F5;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: #3B82F6;
+    width: 75%;
+  }
+  
+  .progress-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #6b7280;
+  }
+  
+  /* ======================
+     PERFORMANCE GRAPH CARD
+     ====================== */
+  .graph-card {
+    width: 100%;
+    max-width: 999px;
+    background: #FFFFFF;
+    border: 1px solid #F1F2F5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .graph-card h4 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-align: center;
+  }
+  
+  .vertical-bars-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 200px;
+    padding: 0 20px;
+  }
+  
+  .bar-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+  }
+  
+  .bar-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  
+  .bar-background {
+    background-color: #F1F2F5;
+    border-radius: 4px 4px 0 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  
+  .bar-fill {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #3B82F6;
+    border-radius: 4px 4px 0 0;
+    transition: height 0.5s ease;
+    min-height: 2px;
+  }
+  
+  .bar-label {
+    margin-top: 8px;
+    font-size: 12px;
+    color: #6b7280;
+    text-align: center;
+  }
+  
+  .bar-value {
+    margin-top: 4px;
+    font-size: 12px;
+    color: #4a4a4a;
+    font-weight: 500;
+    text-align: center;
+  }
+  
+  /* ======================
+     INFO BOXES COMPONENT
+     ====================== */
+  .info-boxes-container {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 999px;
+    margin-top: 20px;
+  }
+  
+  .info-box {
+    flex: 1;
+    background: #FFFFFF;
+    border: 1px solid #F1F2F5;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    min-height: 120px;
+  }
+  
+  .info-box h5 {
+    color: #4a4a4a;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  /* ======================
+     CARDS CONTAINER
+     ====================== */
+  .student-cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+  
+  .student-cards-wrapper .data-rectangle {
+    margin-top: 0;
+  }
+  
+  /* ======================
+     CONTENT HEADER
+     ====================== */
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  /* ======================
+     RESPONSIVE DESIGN
+     ====================== */
+  
+  /* Tablet/Small Desktop (max-width: 1024px) */
+  @media (max-width: 1024px) {
+    /* Mobile adjustments for student card */
+    .data-rectangle {
+      max-width: 100%;
+      padding-left: 90px;
+      padding-right: 15px;
+      min-height: 150px;
+    }
+  
+    .student-avatar {
+      width: 60px;
+      height: 60px;
+      top: 20px;
+    }
+  
+    .student-name {
+      left: 90px;
+      top: 20px;
+    }
+  
+    .student-name h3 {
+      font-size: 14px;
+    }
+  
+    .student-name p {
+      font-size: 12px;
+    }
+  
+    .student-actions {
+      gap: 30px;
+      top: 15px;
+      right: 15px;
+    }
+    
+    .btn {
+      padding: 6px 12px;
+      font-size: 13px;
+      width: 110px;
+    }
+  
+    .progress-container {
+      top: 100px;
+      left: 20px;
+      width: calc(100% - 40px);
+    }
+  
+    .progress-labels {
+      font-size: 11px;
+    }
+  
+    /* Graph card adjustments */
+    .graph-card {
+      padding: 15px;
+    }
+  
+    .vertical-bars-container {
+      height: 180px;
+    }
+  
+    .bar-label, .bar-value {
+      font-size: 11px;
+    }
+  
+    /* Info boxes adjustments */
+    .info-boxes-container {
+      flex-direction: column;
+    }
+    
+    .info-box {
+      width: 100%;
+    }
+  }
+  
+  /* Medium Screens (max-width: 768px) */
+  @media (max-width: 768px) {
+    .content-container {
+      padding: 30px 15px 15px;
+    }
+  
+    .student-actions {
+      gap: 20px;
+    }
+  
+    .vertical-bars-container {
+      height: 160px;
+    }
+  }
+  
+  /* Small Screens (max-width: 480px) */
+  @media (max-width: 480px) {
+    /* Mobile adjustments */
+    .data-rectangle {
+      padding-left: 80px;
+    }
+  
+    .student-avatar {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .student-name {
+      left: 80px;
+    }
+  
+    .student-actions {
+      gap: 12px;
+      top: 10px;
+      right: 10px;
+    }
+    
+    .btn {
+      width: 100px;
+      padding: 5px 10px;
+    }
+  
+    .progress-labels {
+      font-size: 10px;
+      margin-top: 4px;
+    }
+  
+    /* Graph card mobile styles */
+    .graph-card {
+      padding: 12px;
+    }
+  
+    .vertical-bars-container {
+      height: 140px;
+      padding: 0 10px;
+    }
+  
+    .bar-column {
+      width: 16%;
+    }
+  
+    .bar-label, .bar-value {
+      font-size: 10px;
+    }
+  }
