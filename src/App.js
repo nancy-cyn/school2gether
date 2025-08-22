@@ -1,11 +1,30 @@
 import React from 'react';
-// Adjust the path if Teacher.js is in a different directory
-
-import Student from './student';
+import StudentDirectory from './Pages/studirectory';
+import './App.css';
+import { BrowserRouter, Routes, Route, Link } from 'react-router-dom';
+import Dashboard from "./Pages/Dashboard";
+import SchedulePage from "./Pages/Schedule";
+import AnalyticsSummary from "./Pages/AnalyticsPage";
+import CheckoutForm from "./Pages/Payment";
+import InvoicesPage from "./Pages/Billing-center";
+import SessionUsage from "./Pages/SessionUsage";
 
 function App() {
   return (
-    <Student />
+    <div>
+      {/*<StudentDirectory />*/}
+       {/*<Dashboard />*/}
+      {/*  <SchedulePage/>*/}
+        {/* <AnalyticsSummary/> */}
+      {/*<CheckoutForm/>*/}
+        <BrowserRouter>
+            <Routes>
+                <Route path="/Checkout" element={<CheckoutForm />} />
+                <Route path="/BillingStation" element={<InvoicesPage />} />
+                <Route path="/SessionUsage" element={<SessionUsage />} />
+            </Routes>
+        </BrowserRouter>
+    </div>
   );
 }
 

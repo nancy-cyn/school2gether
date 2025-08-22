@@ -1,0 +1,67 @@
+.checkout-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px 6px rgba(0,0,0,0.1);
+    margin-top: 50px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.card-icons img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.inline-fields {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.checkout-btn {
+    grid-column: span 2;
+    padding: 12px;
+    background: #28a745;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.checkout-btn:hover {
+    background: #218838;
+}
+
+@media(max-width: 700px) {
+    .checkout-container {
+        grid-template-columns: 1fr;
+    }
+}
