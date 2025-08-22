@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+    background: #f3f4f6;
+}
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.sidebar {
+    width: 220px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.sidebar .logo {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style: none;
+    text-decoration: none;
+}
+
+.sidebar li {
+    padding: 12px 20px;
+    cursor: pointer;
+    color: #444;
+
+}
+
+.sidebar li:hover,
+.sidebar {
+    color: #0070f3;
+    text-decoration: none;
+}
+.active{
+    background-color: #ddd;
+    color: #74a6e2;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+.Invoice{
+    background: #eaf1ff;
+    color: #0070f3;
+}
+
+.content {
+    flex: 1;
+    padding: 30px;
+}
+
+.content h2 {
+    margin-bottom: 20px;
+}
+
+.card {
+    background: #fff;
+    padding: 18px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.status.paid {
+    background: #d4f7d4;
+    color: #2c7a2c;
+}
+
+.download-btn {
+    border: 1px solid #ddd;
+    border-radius: 17px;
+    padding: 10px;
+    background-color: #eaf1ff;
+    /*font-size: 18px;*/
+    cursor: pointer;
+}

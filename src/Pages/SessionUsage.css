@@ -1,0 +1,123 @@
+
+.SessionUsage {
+    display: flex;
+    height: 100vh;
+    background: #f3f4f6;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+.sidebar .logo{
+    width: 220px;
+    background: #fff;
+    border-right: 1px solid #ddd;
+    padding: 20px 0;
+}
+.sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.sidebar li {
+    padding: 19px 25px;
+    cursor: pointer;
+    color: #444;
+}
+.sidebar li:hover {
+    color: #0070f3;
+}
+.active {
+    background-color: #ddd;
+    color: #74a6e2;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+.usage {
+    background: #eaf1ff;
+    color: #0070f3;
+}
+
+.session-container {
+    flex: 1;
+    padding: 30px;
+    background-color: #f4f4f7;
+}
+.session-container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.session-card {
+    display: flex;
+    gap: 30px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.overview,
+.upcoming {
+    flex: 1;
+    gap: 3em;
+}
+h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Items */
+.overview-item,
+.upcoming-item {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+.overview-text,
+.upcoming-text {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+.name {
+    font-weight: bold;
+    color: #333;
+}
+.status,
+.date {
+    font-size: 13px;
+    color: #777;
+}
+
+.progress-bar {
+    height: 6px;
+    background: #e6e6e6;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.progress {
+    height: 100%;
+    background: #4a80f0;
+}
+
+.upcoming-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.view-link {
+    font-size: 14px;
+    color: #4a80f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+.view-link:hover {
+    text-decoration: underline;
+}
