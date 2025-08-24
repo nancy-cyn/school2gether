@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f9;
+    text-align: center;
+    padding: 40px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  p {
+    color: #666;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  /* The Chatling chat widget already floats at the bottom-right */
+  
