@@ -1,20 +1,16 @@
-// sidebar.js
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUser, faChartLine, faCalendarDays, faVideo, faMessage, faBell, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-
+import { 
+  faUser, faChartLine, faCalendarDays, 
+  faVideo, faMessage, faBell, 
+  faEnvelope
+} from '@fortawesome/free-solid-svg-icons';
 import './Sidebar.css';
 
-/**
- * Sidebar Component - Displays the navigation menu
- * @param {boolean} isOpen - Controls sidebar visibility
- * @param {function} onClose - Callback to close sidebar
- * @param {boolean} isDesktopView - Indicates desktop viewport
- */
-export function Sidebar({ isOpen, onClose, isDesktopView }) {
+function Sidebar({ isOpen, onClose, isDesktopView }) {
   return (
     <div className={`sidebar ${isOpen ? 'open' : ''} ${isDesktopView ? 'desktop-visible' : ''}`}>
-      {/* Mobile sidebar header with close button */}
+      {/* Mobile-only header (close button) */}
       {!isDesktopView && (
         <div className="sidebar-header">
           <h3>Menu</h3>
@@ -24,10 +20,11 @@ export function Sidebar({ isOpen, onClose, isDesktopView }) {
         </div>
       )}
       
-      {/* Main sidebar content */}
+      {/* Sidebar content wrapper */}
       <div className="sidebar-content-wrapper">
+        {/* Navigation sections */}
         <div className="sidebar-sections">
-          {/* Top navigation section */}
+          {/* Top section */}
           <ul className="sidebar-nav">
             <li><a href="#dashboard">Dashboard</a></li>
             <li><a href="#sessions"><FontAwesomeIcon icon={faCalendarDays} />Sessions</a></li>
@@ -35,14 +32,14 @@ export function Sidebar({ isOpen, onClose, isDesktopView }) {
             <li><a href="#analytics"><FontAwesomeIcon icon={faChartLine} /> Analytics</a></li>
           </ul>
 
-          {/* Middle navigation section */}
+          {/* Middle section */}
           <ul className="sidebar-nav middle-section">
             <li><a href="#materials">Materials</a></li>
             <li><a href="#recording"><FontAwesomeIcon icon={faVideo} /> Recordings</a></li>
             <li><a href="#assessments">Assessments</a></li>
           </ul>
 
-          {/* Bottom navigation section */}
+          {/* Bottom section */}
           <ul className="sidebar-nav bottom-section">
             <li><a href="#messages"><FontAwesomeIcon icon={faMessage} /> Messages</a></li>
             <li><a href="#requests"><FontAwesomeIcon icon={faEnvelope} /> Requests</a></li>
@@ -53,7 +50,7 @@ export function Sidebar({ isOpen, onClose, isDesktopView }) {
           </ul>
         </div>
 
-        {/* Tutor profile (visible only in desktop view) */}
+        {/* Desktop-only tutor profile */}
         {isDesktopView && (
           <div className="tutor-profile">
             <img
@@ -68,3 +65,5 @@ export function Sidebar({ isOpen, onClose, isDesktopView }) {
     </div>
   );
 }
+
+export default Sidebar;
